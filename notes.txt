@@ -1,0 +1,13 @@
+Development notes
+-------------------
+These are notes/ideas/thoughts about the project that would better fit in a text file than a git commit.
+
+2014-12-02 jglauche - Getting the tube off the head of a Littmann required two flat screwdrivers and some force
+
+2014-12-02 jglauche - I'm not convinced that the stethoscope head alone is responsible for all audio quality. I believe the tubing has to be made so that the earpieces push firmly into the ears, to dampen the noise and to especially transport lower frequencies from the tubing into the ear.
+
+2014-12-02 jglauche - I've created a CrystalSCAD project (ruby to OpenSCAD code) in order to reduce my development time. If this should be a problem later, I might re-write this in pure OpenSCAD code after testing.
+
+2014-12-02 jglauche - I'll start by making a rough sketch of the Littman head 
+ 
+
