@@ -1,5 +1,5 @@
 $fn=64;
-color("lightgrey"){union(){union(){union(){union(){union(){union(){union(){union(){cylinder(h = 1.080, r = 21.715);
+color("lightgrey"){difference(){difference(){difference(){union(){union(){union(){union(){union(){union(){union(){union(){cylinder(h = 1.080, r = 21.715);
 translate(v = [0, 0, 1.080])
 cylinder(h = 1.060, r = 21.000);
 }
@@ -23,5 +23,17 @@ cylinder(h = 0.800, r = 15.500);
 }
 translate(v = [0, 0, 25.800])
 cylinder(h = 1.420, r = 17.215);
+}
+translate(v = [0, 0, -0.010])
+cylinder(h = 27.240, r = 1.575);
+}
+translate(v = [0, 0, -0.010])
+cylinder(z = 0.210, r = 17.850);
+}
+translate(v = [0, 0, -0.010])
+difference(){cylinder(h = 0.570, r = 20.450);
+translate(v = [0, 0, -0.010])
+cylinder(h = 0.590, r = 17.850);
+}
 }
 }

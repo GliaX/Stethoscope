@@ -52,6 +52,27 @@ class StethoscopeHead < CrystalScad::Printed
 		#
 		# 2. Inside dimensions, minus the tube exit
 	  #	
+		
+		# hole in the middle
+		res -= cylinder(d:3.15, h: @z+0.02).translate(z:-0.01) # note: all cuts are made with 0.01mm offset so they won't overlap with solid surfaces on preview
+
+		inner_shape_diameter = 33.4
+
+		# the inner ring where the diaphram can sit on when pressed firmly 	
+		res -= cylinder(d:35.7,z:0.2+0.01).translate(z:-0.01)		
+		
+		# The valley between the inner diaphram ring and the outer rim	
+		valley_z = 0.56
+		valley = cylinder(d:40.9,h:valley_z+0.01)
+		valley -= cylinder(d:35.7,h:valley_z+0.03).translate(z:-0.01)
+		res -= valley.translate(z:-0.01)
+
+		# I've taken the measurements from the hole in 2mm increments. the last one was less than 2mm
+		measurements = [0.0,0.105,0.24,0.35,0.47,0.60,0.71,0.835,0.966,1.09,1.29,1.33,1.455,1.555]
+
+				
+				
+		
 
 
 
