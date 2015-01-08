@@ -67,11 +67,30 @@ class StethoscopeHead < CrystalScad::Printed
 		valley -= cylinder(d:35.7,h:valley_z+0.03).translate(z:-0.01)
 		res -= valley.translate(z:-0.01)
 
-		# I've taken the measurements from the hole in 2mm increments. the last one was less than 2mm
-		measurements = [0.0,0.105,0.24,0.35,0.47,0.60,0.71,0.835,0.966,1.09,1.29,1.33,1.455,1.555]
+		# I've taken the measurements from the hole in 2mm increments. 
+		# the last one I have taken had value of 1.555, but it was less than 2mm. This has to be re-measured more precisely
+		measurements = [0.0,0.105,0.24,0.35,0.47,0.60,0.71,0.835,0.966,1.09,1.29,1.33,1.455]
+		
+		# I need to convert the measurements into 2d coordinates now, putting them into the new array "points"
+		points = []
+		measurements.reverse.each_with_index do |m,i|
+			points << [i*2,m] # 2 was the increments I have in my measurements
+		end
+		
+    # in order to get a triangle, add 0,0 as the base point
+		points << [0,0] 
+		
+		# create our 2d template of the cone and rotate it to the correct rotation		
+		cone_template = polygon(points:points).rotate(x:90)  
+		
+		# now we need to rotate extude the template we've got in order to get cone, which we can substract
+		cone = cone_template.rotate_extrude(convexity:10)
 
-				
-				
+		res -= cone.translate(z:valley_z)
+		
+		# FIXME: so at the moment I see two problems:
+		# 1. there seem to be a measurement error, or the "2mm increments" on my lathe are not 2mm. There could be some measurement errors involved because it has a bit of play whenever is goes in the other directoin. 
+		# 2. the measurement resolution must be higher towards the center 
 		
 
 
