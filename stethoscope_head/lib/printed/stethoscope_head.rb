@@ -53,9 +53,6 @@ class StethoscopeHead < CrystalScad::Printed
 		# 2. Inside dimensions, minus the tube exit
 	  #	
 		
-		# hole in the middle
-		res -= cylinder(d:3.15, h: @z+0.02).translate(z:-0.01) # note: all cuts are made with 0.01mm offset so they won't overlap with solid surfaces on preview
-
 		inner_shape_diameter = 33.4
 
 		# the inner ring where the diaphram can sit on when pressed firmly 	
@@ -107,11 +104,40 @@ class StethoscopeHead < CrystalScad::Printed
 		shaft_length = 2
 		cone += cylinder(d:inner_shape_diameter,h:shaft_length).translate(z:-shaft_length)		
 		
-
 	
 		res -= cone.translate(z:valley_z) 
 
 	
+		#
+		# 3. Tube exit
+	  #	
+		
+		# I'm using the standard values right now that were put into the Connector file
+		connector = Connector.new
+	
+		# I need to rotate the connector, so it exits sideways
+		conn = connector.show.rotate(x:90)
+	
+		# So, I need to know the height of where the connector is placed
+		# I've measured 17.8mm from the thick (base) part of the connector to the bottom.
+		# The base diameter is 10.9mm, so center is 17.8mm - base radius 5.45mm  = 12.35mm 
+		@connector_height = 12.35		
+	
+		res += conn.translate(z: @connector_height)		
+	
+		# Since I've added the connector here and adding a hole does not punch a hole into the part, I need to substract it again
+		# I've put that cut in the Connector class into a method that I can just call. 
+		# In order to get it to the correct position, I need to rotate it by 90° and then translate as the previous steps again
+		res -= connector.inside_cut.rotate(x:90).translate(z: @connector_height)		
+
+		# I've moved this downwards from step 2, as the connector would add material to the hole
+		# hole in the middle
+		res -= cylinder(d:3.15, h: @z+0.02).translate(z:-0.01) # note: all cuts are made with 0.01mm offset so they won't overlap with solid surfaces on preview
+
+		# Note: The inside cut on the littmann looks a tiny bit different from the output here. 
+		# This is due to that the cut is inside their rotating connector and seems to go ~1mm deeper 
+		# We will need to find out in experiments if this is making a difference or not.
+
 		res.color("lightgrey")
 	end
 

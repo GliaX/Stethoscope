@@ -1,5 +1,5 @@
 $fn=64;
-color("lightgrey"){difference(){difference(){difference(){union(){union(){union(){union(){union(){union(){union(){union(){cylinder(h = 1.080, r = 21.715);
+color("lightgrey"){difference(){difference(){union(){difference(){difference(){union(){union(){union(){union(){union(){union(){union(){union(){cylinder(h = 1.080, r = 21.715);
 translate(v = [0, 0, 1.080])
 cylinder(h = 1.060, r = 21.000);
 }
@@ -25,9 +25,6 @@ translate(v = [0, 0, 25.800])
 cylinder(h = 1.420, r = 17.215);
 }
 translate(v = [0, 0, -0.010])
-cylinder(h = 27.240, r = 1.575);
-}
-translate(v = [0, 0, -0.010])
 difference(){cylinder(h = 0.570, r = 20.450);
 translate(v = [0, 0, -0.010])
 cylinder(h = 0.590, r = 17.850);
@@ -41,5 +38,40 @@ rotate_extrude(convexity = 10){polygon(points = [[0.000, 0], [0.250, 0], [0.500,
 translate(v = [0, 0, -2])
 cylinder(h = 2, r = 16.700);
 }
+}
+translate(v = [0, 0, 12.350])
+rotate(a = [90, 0, 0])
+difference(){union(){cylinder(h = 21, r = 5.450);
+translate(v = [0, 0, 21])
+difference(){union(){union(){cylinder(h = 20.300, r = 4.000);
+cylinder(h = 5, r = 4.250);
+}
+translate(v = [0, 0, 5])
+union(){union(){cylinder(h = 3.500, r1 = 4.750, r2 = 4.000);
+translate(v = [0, 0, 5.000])
+cylinder(h = 3.500, r1 = 4.750, r2 = 4.000);
+}
+translate(v = [0, 0, 10.000])
+cylinder(h = 5.200, r1 = 4.750, r2 = 4.000);
+}
+}
+translate(v = [0, 0, 18.300])
+union(){cylinder(h = 2.000, r1 = 2.000, r2 = 3.000);
+translate(v = [0, 0, 2.000])
+cylinder(h = 1, r = 3.000);
+}
+}
+}
+translate(v = [0, 0, -0.010])
+cylinder(h = 41.320, r = 2.000);
+}
+}
+translate(v = [0, 0, 12.350])
+rotate(a = [90, 0, 0])
+translate(v = [0, 0, -0.010])
+cylinder(h = 41.320, r = 2.000);
+}
+translate(v = [0, 0, -0.010])
+cylinder(h = 27.240, r = 1.575);
 }
 }

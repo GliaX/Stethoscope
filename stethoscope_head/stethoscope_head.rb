@@ -17,6 +17,7 @@ require_all "lib/**/*.rb"
  
 
 res = StethoscopeHeadAssembly.new.show
+#res = Connector.new.show
 
 res.save("stethoscope_head.scad","$fn=64;")
 

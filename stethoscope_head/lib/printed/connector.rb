@@ -53,10 +53,14 @@ class Connector < CrystalScad::Printed
 		res = base + connector
 
 		# remove a cylinder over the whole length 
-		res -= cylinder(d: @connector_inner_diameter, h: @base_length + @connector_length + 0.02).translate(z:-0.01) # additional 0.01 margin on top & bottom for clean cut in OpenSCAD. 
+		res -= inside_cut
 
 		return res
 	end	
+
+	def inside_cut
+		cylinder(d: @connector_inner_diameter, h: @base_length + @connector_length + 0.02).translate(z:-0.01) # additional 0.01 margin on top & bottom for clean cut in OpenSCAD. 
+	end
 
 	# I'm trying to make the copy of the littmann_connector already as parametric as possible, although we will likely
 	# need to replace it for a slightly easier one to make in a later step.
