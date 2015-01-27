@@ -18,7 +18,7 @@ class Connector < CrystalScad::Printed
 	def initialize(args={})
 		# I define "base" here as in the thickest part which sticks out from the stethoscope head 
 		@base_diameter = args[:base_diameter] || 10.9
-		@base_height = args[:base_height] || 21 # estimated
+		@base_length = args[:base_length] || 21 # estimated
 		
 		# The inner diameter of the whole connector 
 		@connector_inner_diameter = args[:connector_inner_diameter] || 4.0
@@ -30,15 +30,84 @@ class Connector < CrystalScad::Printed
 
 
 		# Inner diameter of the tube that is being used
-		@tube_inner_diameter = args[:tube_inner_diameter]
+		@tube_inner_diameter = args[:tube_inner_diameter] || 7.5
+		
+		# Length of the pushfit part
+		@connector_length = args[:connector_length] || 20.3
+		
 
-		# TODO: I don't have the tubing at hand right now, I'm in need of the inner diameter in order to make a proper connector. 
-			
+
+		# FIXME: For the first prototype, I'm copying the littmann's dimensions. 
+		# Making them fully parametric is a step further.
 
 	end
 
 	def show
-		res = cylinder(d:@base_diameter,h:@base_height)
+		# the "base" is the part that sticks deep into the stethoscope. 
+		base = cylinder(d:@base_diameter,h:@base_length)
+
+		# FIXME: the pushfit connector is currently hardcoded to the littmann tubing. 
+		connector = littmann_connector.translate(z:@base_length)
+
+		# combine base and connector part
+		res = base + connector
+
+		# remove a cylinder over the whole length 
+		res -= cylinder(d: @connector_inner_diameter, h: @base_length + @connector_length + 0.02).translate(z:-0.01) # additional 0.01 margin on top & bottom for clean cut in OpenSCAD. 
+
+		return res
 	end	
+
+	# I'm trying to make the copy of the littmann_connector already as parametric as possible, although we will likely
+	# need to replace it for a slightly easier one to make in a later step.
+	def littmann_connector
+		
+		# As base, I'm doing a cylinder with diameter of 8mm (which is 0.5mm thicker than the flexible tube) as measured on the top two smallest parts
+		@connector_outside_diameter = @tube_inner_diameter + 0.5				
+		res = cylinder(d: @connector_outside_diameter, h: @connector_length)
+
+		# the bottom part, next to the actual base is 0.5mm thicker, calling it connector_thick_base
+		@connector_thick_base_diameter = @connector_outside_diameter + 0.5
+		@connector_thick_base_length = 5
+
+		# Adding this extra bit to the output. 
+		res += cylinder(d: @connector_thick_base_diameter, h: @connector_thick_base_length)
+
+		# The three cones all have the same outside diameter, which is 9.5mm. I'll use the tube again for reference
+		@cone_outside_diameter = @tube_inner_diameter + 2		
+
+		# The two inner cones are both the same. They are 3.5mm in length and there's a 1.5mm spacing in between
+		@cone_length = 3.5		
+		@cone_spacing = 1.5
+
+		# I'm adding the first two cones
+		cones = cylinder(d1: @cone_outside_diameter, d2: @connector_outside_diameter, h: @cone_length)
+		cones += cylinder(d1: @cone_outside_diameter, d2: @connector_outside_diameter, h: @cone_length).translate(z:@cone_length + @cone_spacing)
+		
+		# The upper cone is approximately 5.2mm long. 
+		# I suspect this is different because the inside diameter goes larger in there		
+		@upper_cone_length = 5.2
+
+		# adding the upper cone
+		cones += cylinder(d1: @cone_outside_diameter, d2: @connector_outside_diameter, h: @upper_cone_length).translate(z:(@cone_length + @cone_spacing)*2)
+		
+
+		# combining the cones with the rest of the connector
+		res += cones.translate(z:@connector_thick_base_length)
+		
+			
+		# There's a taper exit of the connector. 
+		#	Note: I'm going to substract it here at this method, although the rest of the inner diameter is substracted in show
+		connector_exit = cylinder(d1: @connector_inner_diameter, d2: @connector_exit_diameter, h: @connector_exit_cone_length)
+		
+		# In order to get a clean cut for the exit, I'm adding a small cylinder on top of the cone
+		connector_exit += cylinder(d: @connector_exit_diameter, h:1).translate(z: @connector_exit_cone_length)
+
+		# Now removing the exit cone
+		res -= connector_exit.translate(z:@connector_length-@connector_exit_cone_length)		
+
+
+		return res
+	end
 		
 end
