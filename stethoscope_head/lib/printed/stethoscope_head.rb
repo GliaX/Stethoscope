@@ -1,8 +1,29 @@
 class StethoscopeHead < CrystalScad::Printed
 	def initialize()
+
+
+		
+		# I'm using the standard values right now that were put into the Connector file
+		@connector = Connector.new
+	
+		# So, I need to know the height of where the connector is placed
+		# I've measured 17.8mm from the thick (base) part of the connector to the bottom.
+		# The base diameter is 10.9mm, so center is 17.8mm - base radius 5.45mm  = 12.35mm 
+		@connector_height = 12.35		
+
 	end
 
 	def show
+		# For being able to re-use the code outside of this class, I've seperated the outside and inside shape	
+
+		res = outside_shape
+
+		res -= inside_cut
+
+		res.color("lightgrey")
+	end
+
+	def outside_shape
 		# Dimensions of the Littmann Head 
 		#
 		# 1. Outside dimensions, not including inner dimensions nor tubing exit
@@ -49,6 +70,22 @@ class StethoscopeHead < CrystalScad::Printed
 		@z += stage9
 		
 
+		# 2. Inside dimensions have been moved to method inner_cut
+
+	
+		#
+		# 3. Tube exit
+	  #	
+
+		# I need to rotate the connector, so it exits sideways
+		conn = @connector.show.rotate(x:90)
+	
+		# put it to where the connector is placed
+		res += conn.translate(z: @connector_height)		
+	end
+
+	def inside_cut
+		
 		#
 		# 2. Inside dimensions, minus the tube exit
 	  #	
@@ -105,40 +142,26 @@ class StethoscopeHead < CrystalScad::Printed
 		cone += cylinder(d:inner_shape_diameter,h:shaft_length).translate(z:-shaft_length)		
 		
 	
-		res -= cone.translate(z:valley_z) 
+		res += cone.translate(z:valley_z) 
 
-	
-		#
-		# 3. Tube exit
-	  #	
-		
-		# I'm using the standard values right now that were put into the Connector file
-		connector = Connector.new
-	
-		# I need to rotate the connector, so it exits sideways
-		conn = connector.show.rotate(x:90)
-	
-		# So, I need to know the height of where the connector is placed
-		# I've measured 17.8mm from the thick (base) part of the connector to the bottom.
-		# The base diameter is 10.9mm, so center is 17.8mm - base radius 5.45mm  = 12.35mm 
-		@connector_height = 12.35		
-	
-		res += conn.translate(z: @connector_height)		
-	
+
+		# Connector
+
 		# Since I've added the connector here and adding a hole does not punch a hole into the part, I need to substract it again
 		# I've put that cut in the Connector class into a method that I can just call. 
 		# In order to get it to the correct position, I need to rotate it by 90° and then translate as the previous steps again
-		res -= connector.inside_cut.rotate(x:90).translate(z: @connector_height)		
+		res += @connector.inside_cut.rotate(x:90).translate(z: @connector_height)		
 
 		# I've moved this downwards from step 2, as the connector would add material to the hole
 		# hole in the middle
-		res -= cylinder(d:3.15, h: @z+0.02).translate(z:-0.01) # note: all cuts are made with 0.01mm offset so they won't overlap with solid surfaces on preview
+		res += cylinder(d:3.15, h: @z+0.02).translate(z:-0.01) # note: all cuts are made with 0.01mm offset so they won't overlap with solid surfaces on preview
 
 		# Note: The inside cut on the littmann looks a tiny bit different from the output here. 
 		# This is due to that the cut is inside their rotating connector and seems to go ~1mm deeper 
 		# We will need to find out in experiments if this is making a difference or not.
 
-		res.color("lightgrey")
+		res
 	end
+
 
 end	
