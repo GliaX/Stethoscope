@@ -21,5 +21,8 @@ res = StethoscopeHeadAssembly.new.show
 
 res.save("stethoscope_head.scad","$fn=64;")
 
+res = PrintableStethoscopeHead1Assembly.new.show
+res.save("printable_head1.scad","$fn=64;")
+
 @@bom.save("bom.txt")
 
