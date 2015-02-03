@@ -52,7 +52,7 @@ cylinder(h = 1, r = 3.000);
 }
 }
 translate(v = [0, 0, -0.010])
-cylinder(h = 41.320, r = 2.000);
+cylinder(h = 41.320, r = 2.150);
 }
 }
 }
@@ -75,10 +75,10 @@ cylinder(h = 2, r = 16.700);
 translate(v = [0, 0, 12.350])
 rotate(a = [90, 0, 0])
 translate(v = [0, 0, -0.010])
-cylinder(h = 41.320, r = 2.000);
+cylinder(h = 41.320, r = 2.150);
 }
 translate(v = [0, 0, -0.010])
-cylinder(h = 27.240, r = 1.575);
+cylinder(h = 27.240, r = 1.940);
 }
 }
 cylinder(h = 3, r = 2.500);

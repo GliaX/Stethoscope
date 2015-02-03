@@ -32,6 +32,9 @@ class Connector < CrystalScad::Printed
 		# Inner diameter of the tube that is being used
 		@tube_inner_diameter = args[:tube_inner_diameter] || 7.5
 		
+		# Additional inner diameter for printing
+		@tube_additional_inner_diameter = args[:tube_additional_inner_diameter] || 0
+
 		# Length of the pushfit part
 		@connector_length = args[:connector_length] || 20.3
 		
@@ -59,7 +62,7 @@ class Connector < CrystalScad::Printed
 	end	
 
 	def inside_cut
-		cylinder(d: @connector_inner_diameter, h: @base_length + @connector_length + 0.02).translate(z:-0.01) # additional 0.01 margin on top & bottom for clean cut in OpenSCAD. 
+		cylinder(d: @connector_inner_diameter+@tube_additional_inner_diameter, h: @base_length + @connector_length + 0.02).translate(z:-0.01) # additional 0.01 margin on top & bottom for clean cut in OpenSCAD. 
 	end
 
 	# I'm trying to make the copy of the littmann_connector already as parametric as possible, although we will likely

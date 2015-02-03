@@ -1,15 +1,19 @@
 class StethoscopeHead < CrystalScad::Printed
-	def initialize()
+	def initialize(args={})
+
+		# I've added these two parameters in order to compensate for shrinkage when printing it on a RepRap 3d printer
+		@hole_additional_diameter = args[:hole_additional_diameter] || 0
+		@connector_additional_diameter = args[:connector_additional_diameter] || 0
 
 
-		
 		# I'm using the standard values right now that were put into the Connector file
-		@connector = Connector.new
+		@connector = Connector.new(tube_additional_inner_diameter:@connector_additional_diameter)
 	
 		# So, I need to know the height of where the connector is placed
 		# I've measured 17.8mm from the thick (base) part of the connector to the bottom.
 		# The base diameter is 10.9mm, so center is 17.8mm - base radius 5.45mm  = 12.35mm 
 		@connector_height = 12.35		
+	
 
 	end
 
@@ -154,7 +158,7 @@ class StethoscopeHead < CrystalScad::Printed
 
 		# I've moved this downwards from step 2, as the connector would add material to the hole
 		# hole in the middle
-		res += cylinder(d:3.15, h: @z+0.02).translate(z:-0.01) # note: all cuts are made with 0.01mm offset so they won't overlap with solid surfaces on preview
+		res += cylinder(d:3.15 + @hole_additional_diameter, h: @z+0.02).translate(z:-0.01) # note: all cuts are made with 0.01mm offset so they won't overlap with solid surfaces on preview
 
 		# Note: The inside cut on the littmann looks a tiny bit different from the output here. 
 		# This is due to that the cut is inside their rotating connector and seems to go ~1mm deeper 
