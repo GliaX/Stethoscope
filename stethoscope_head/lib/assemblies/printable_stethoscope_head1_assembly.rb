@@ -5,8 +5,20 @@ class PrintableStethoscopeHead1Assembly < CrystalScad::Assembly
 	def part(show)
 		# I'm using most of the Littmann head, but I want to cut everything on top of the connector
 		
+		# Defining the connector parameters here, overriding the standards of StethoscopeHead
+		@connector = Connector.new(tube_additional_inner_diameter:0.3,
+														   base_length:20,	
+															 connector_outside_diameter:8.5,
+															 connector_inner_diameter:5,
+															 connector_exit_diameter:6.5
+				)
+
 		# initialize the Stethoscope Head
-		head = StethoscopeHead.new(hole_additional_diameter:0.73,connector_additional_diameter:0.3)
+		head = StethoscopeHead.new(hole_additional_diameter: 0.73+3,
+															 connector:@connector,												 
+															 connector_height:13.5
+
+					)
 
 		# For that, I'm making a large centered (in x/y) cube with the height of the tube at 17.8mm
 		@height = 17.8		
@@ -25,7 +37,7 @@ class PrintableStethoscopeHead1Assembly < CrystalScad::Assembly
 	
 		# since the hole in the middle on the littmann model goes all the way through and I don't want that,
 		# I'll close that by adding a small cylinder 
-		res += cylinder(d: 5, h: 3)		
+		res += cylinder(d: 10, h: 1.7)		
 		
 		return res
 	end

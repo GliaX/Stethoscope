@@ -37,7 +37,9 @@ class Connector < CrystalScad::Printed
 
 		# Length of the pushfit part
 		@connector_length = args[:connector_length] || 20.3
-		
+
+		# Outside diameter of the connector		
+		@connector_outside_diameter = args[:connector_outside_diameter] || @tube_inner_diameter + 0.5				
 
 
 		# FIXME: For the first prototype, I'm copying the littmann's dimensions. 
@@ -70,7 +72,6 @@ class Connector < CrystalScad::Printed
 	def littmann_connector
 		
 		# As base, I'm doing a cylinder with diameter of 8mm (which is 0.5mm thicker than the flexible tube) as measured on the top two smallest parts
-		@connector_outside_diameter = @tube_inner_diameter + 0.5				
 		res = cylinder(d: @connector_outside_diameter, h: @connector_length)
 
 		# the bottom part, next to the actual base is 0.5mm thicker, calling it connector_thick_base

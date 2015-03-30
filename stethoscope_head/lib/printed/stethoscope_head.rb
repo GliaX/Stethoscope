@@ -7,12 +7,12 @@ class StethoscopeHead < CrystalScad::Printed
 
 
 		# I'm using the standard values right now that were put into the Connector file
-		@connector = Connector.new(tube_additional_inner_diameter:@connector_additional_diameter)
+		@connector = args[:connector] || Connector.new(tube_additional_inner_diameter:@connector_additional_diameter)
 	
 		# So, I need to know the height of where the connector is placed
 		# I've measured 17.8mm from the thick (base) part of the connector to the bottom.
 		# The base diameter is 10.9mm, so center is 17.8mm - base radius 5.45mm  = 12.35mm 
-		@connector_height = 12.35		
+		@connector_height = args[:connector_height] || 12.35		
 	
 
 	end

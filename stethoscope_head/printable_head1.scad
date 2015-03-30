@@ -28,31 +28,31 @@ cylinder(h = 0.800, r = 15.500);
 translate(v = [0, 0, 25.800])
 cylinder(h = 1.420, r = 17.215);
 }
-translate(v = [0, 0, 12.350])
+translate(v = [0, 0, 13.500])
 rotate(a = [90, 0, 0])
-difference(){union(){cylinder(h = 21, r = 5.450);
-translate(v = [0, 0, 21])
-difference(){union(){union(){cylinder(h = 20.300, r = 4.000);
-cylinder(h = 5, r = 4.250);
+difference(){union(){cylinder(h = 20, r = 5.450);
+translate(v = [0, 0, 20])
+difference(){union(){union(){cylinder(h = 20.300, r = 4.250);
+cylinder(h = 5, r = 4.500);
 }
 translate(v = [0, 0, 5])
-union(){union(){cylinder(h = 3.500, r1 = 4.750, r2 = 4.000);
+union(){union(){cylinder(h = 3.500, r1 = 4.750, r2 = 4.250);
 translate(v = [0, 0, 5.000])
-cylinder(h = 3.500, r1 = 4.750, r2 = 4.000);
+cylinder(h = 3.500, r1 = 4.750, r2 = 4.250);
 }
 translate(v = [0, 0, 10.000])
-cylinder(h = 5.200, r1 = 4.750, r2 = 4.000);
+cylinder(h = 5.200, r1 = 4.750, r2 = 4.250);
 }
 }
-translate(v = [0, 0, 18.300])
-union(){cylinder(h = 2.000, r1 = 2.000, r2 = 3.000);
-translate(v = [0, 0, 2.000])
-cylinder(h = 1, r = 3.000);
+translate(v = [0, 0, 13.800])
+union(){cylinder(h = 6.500, r1 = 2.500, r2 = 3.250);
+translate(v = [0, 0, 6.500])
+cylinder(h = 1, r = 3.250);
 }
 }
 }
 translate(v = [0, 0, -0.010])
-cylinder(h = 41.320, r = 2.150);
+cylinder(h = 40.320, r = 2.650);
 }
 }
 }
@@ -72,14 +72,14 @@ translate(v = [0, 0, -2])
 cylinder(h = 2, r = 16.700);
 }
 }
-translate(v = [0, 0, 12.350])
+translate(v = [0, 0, 13.500])
 rotate(a = [90, 0, 0])
 translate(v = [0, 0, -0.010])
-cylinder(h = 41.320, r = 2.150);
+cylinder(h = 40.320, r = 2.650);
 }
 translate(v = [0, 0, -0.010])
-cylinder(h = 27.240, r = 1.940);
+cylinder(h = 27.240, r = 3.440);
 }
 }
-cylinder(h = 3, r = 2.500);
+cylinder(h = 1.700, r = 5.000);
 }
