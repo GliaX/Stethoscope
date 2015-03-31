@@ -1,18 +1,18 @@
 #Glia Stethoscope Validation Procedure
 ---
 ##Ideology
-A stethoscope is a fundamental medical tool used by doctors worldwide to characterize heart and lung sounds. A spectral analysis of heart sounds has shown the frequencies of interest are 0-500Hz [1]. Similar analysis of respitory sounds has shown the frequencies of interest are 0-2000Hz [2]. A stethoscope that can reliably transmit frequencies at these levels has the greatest potential to be diagnostically useful
+A stethoscope is a fundamental medical tool used by doctors worldwide to characterize heart and lung sounds. A spectral analysis of heart sounds has shown the frequencies of interest are 0-500Hz [1]. Similar analysis of respiratory sounds has shown the frequencies of interest are 0-2000Hz [2]. A stethoscope that can reliably transmit frequencies at these levels has the greatest potential to be diagnostically useful.
 
 ##Setup
-There are many different stethoscope models made by numerous companies which each claim to have a superior product. Previous work by *Abella et al* objectively tested the acoustic properties of 6 different models by measuring the power spectrum of frequencies ranging from 37.5-1000 kHz to determine which stethoscope was most efficient at transmitting sound [3]. At the time of this testing (1992) the Littmann Cardiology II was found to have superior qualities
+There are many different stethoscope models made by numerous companies which each claim to have a superior product. Previous work by *Abella et al* objectively tested the acoustic properties of 6 different models by measuring the power spectrum of frequencies ranging from 37.5-1000 Hz to determine which stethoscope was most efficient at transmitting sound [3]. At the time of this testing (1992) the Littmann Cardiology II was found to have superior qualities.
 
 More recently in 2008 *Finkelstein* expanded this evaluation to include a subjective component by having a group of clinicians use each model on numerous patients and rate the clarity and loudness of sound transduction. Coupling this rating with subjective data at this time it was found that the Littmann Cardiology III was the best device on the market [4].
 
-The frequency of various Glia Model stethoscopes was determined using an experimental setup modelled off of the one used by *Watrous, Grove and Bowen* [5]. 
+The frequency response of various Glia Model stethoscopes was determined using an experimental setup modelled off of the one used by *Watrous, Grove and Bowen* [5]. 
 
 ![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/ModelSetup.PNG "Approximate Test Setup")
 
-In the above topology, the balloon contains 2L of water (2000g), acoustic input is spplied via Monster DNA headphones and sounds were recorded using a Hama microphone. Audacity was used to create a 15 second audio clip of white noise which was played through the setup with the output of each stethoscope being recorded for spectral analysis. The spectrum produced by each stethoscope model was then compared to that of the Littmann Cardiology III. These plots are shown below     
+In the above topology, the balloon contains 2L of water (2000g), acoustic input is supplied via a pair of Monster DNA headphones and sounds were recorded using a Hama microphone. Audacity was used to create a 15 second audio clip of white noise which was played through the setup with the output of each stethoscope being recorded for spectral analysis. The spectrum produced by each stethoscope model was then compared to that of the Littmann Cardiology III. These plots are shown below     
 
 ##Results
 ![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/AllStethComp.png "All Stethoscope Heads")
