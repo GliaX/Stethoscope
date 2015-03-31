@@ -16,6 +16,7 @@ In the above topology, the balloon contains 2L of water (2000g), acoustic input 
 
 ##Results
 ![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/AllStethComp.png "All Stethoscope Heads")
+---
 ![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/Litt3vsGlia2.png "Glia 2 Vs. Littmann Cardiology III")
 
 ##References 
