@@ -27,14 +27,14 @@ plot(Freq,goldMag,'k',Freq,steth1Mag,'g',Freq,steth2Mag,'b',Freq,steth3Mag,'m',F
 xlabel("Frequency (Hz)")
 ylabel("Magnitude (dB)")
 title("Glia Stethoscope Frequency Response")
-legend ('Littmann Cardiac III','100% Infill, ABS, 3mm Channel','100% Infill, ABS, 6mm Channel','15% Infill, ABS, 3mm Channel','100% Infill, ABS, 3mm Channel,Deep Cup')
+legend ('Littmann Cardiology III','100% Infill, ABS, 3mm Channel','100% Infill, ABS, 6mm Channel','15% Infill, ABS, 3mm Channel','100% Infill, ABS, 3mm Channel,Deep Cup')
 
-h2 = figure(2,'name','Glia Model 2 Vs. Littmann Cardiac III');
+h2 = figure(2,'name','Glia Model 2 Vs. Littmann Cardiology III');
 plot(Freq,goldMag,'color','m','Linewidth',2,Freq,steth2Mag,'color','b','Linewidth',2,Freq,abs(goldMag - steth2Mag),'color','r','Linewidth',2)
 xlabel("Frequency (Hz)")
 ylabel("Magnitude (dB)")
-title("Glia Stethoscope Frequency Response \n Comparison of Littmann Cardiac III and Glia Model 2")
-legend ('Littmann Cardiac III','100% Infill, ABS, 6mm Channel','Difference')
+title("Glia Stethoscope Frequency Response \n Comparison of Littmann Cardiology III and Glia Model 2")
+legend ('Littmann Cardiology III','100% Infill, ABS, 6mm Channel','Difference')
 grid on 
 
 return%Remove this line to create image files
