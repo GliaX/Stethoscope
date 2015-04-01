@@ -42,8 +42,10 @@ class Connector < CrystalScad::Printed
 		@connector_outside_diameter = args[:connector_outside_diameter] || @tube_inner_diameter + 0.5				
 
 
-		# FIXME: For the first prototype, I'm copying the littmann's dimensions. 
-		# Making them fully parametric is a step further.
+		# Connector type
+		# 0 = littman type
+		# 1 = cylindrical
+		@connector_type = args[:connector_type] || 0
 
 	end
 
@@ -52,7 +54,12 @@ class Connector < CrystalScad::Printed
 		base = cylinder(d:@base_diameter,h:@base_length)
 
 		# FIXME: the pushfit connector is currently hardcoded to the littmann tubing. 
-		connector = littmann_connector.translate(z:@base_length)
+		case @connector_type		
+			when 0	
+				connector = littmann_connector.translate(z:@base_length)
+			when 1
+				connector = cylindrical_connector.translate(z:@base_length)
+		end
 
 		# combine base and connector part
 		res = base + connector
@@ -118,4 +125,23 @@ class Connector < CrystalScad::Printed
 		return res
 	end
 		
+	# This is defined as connector type 1
+	def cylindrical_connector
+	
+		# We're just using the @connector_outside_diameter as base here
+		res = cylinder(d: @connector_outside_diameter, h: @connector_length)
+
+		# This is copy+pasted from the littmann connector
+		# There's a taper exit of the connector. 
+		#	Note: I'm going to substract it here at this method, although the rest of the inner diameter is substracted in show
+		connector_exit = cylinder(d1: @connector_inner_diameter, d2: @connector_exit_diameter, h: @connector_exit_cone_length)
+		
+		# In order to get a clean cut for the exit, I'm adding a small cylinder on top of the cone
+		connector_exit += cylinder(d: @connector_exit_diameter, h:1).translate(z: @connector_exit_cone_length)
+
+		# And we're removing the exit cone
+		res -= connector_exit.translate(z:@connector_length-@connector_exit_cone_length)		
+
+	end
+
 end

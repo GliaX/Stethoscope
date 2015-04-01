@@ -8,6 +8,7 @@ class PrintableStethoscopeHead1Assembly < CrystalScad::Assembly
 		# Defining the connector parameters here, overriding the standards of StethoscopeHead
 		@connector = Connector.new(tube_additional_inner_diameter:0.3,
 														   base_length:20,	
+															 connector_type: 1,
 															 connector_outside_diameter:8.5,
 															 connector_inner_diameter:5,
 															 connector_exit_diameter:6.5
