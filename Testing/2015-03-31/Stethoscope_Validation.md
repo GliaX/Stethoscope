@@ -8,7 +8,7 @@ There are many different stethoscope models made by numerous companies which eac
 
 More recently in 2008 *Finkelstein* expanded this evaluation to include a subjective component by having a group of clinicians use each model on numerous patients and rate the clarity and loudness of sound transduction. Coupling this rating with subjective data at this time it was found that the Littmann Cardiology III was the best device on the market [4].
 
-The frequency response of various Glia Model stethoscopes was determined using an experimental setup modelled off of the one used by *Watrous, Grove and Bowen* [5]. (**shown below**)
+The frequency response of various Glia Model stethoscopes was determined using an experimental setup modelled off of the one used by *Watrous, Grove and Bowen* [5] shown below.
 
 ![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/ModelSetup.PNG "Approximate Test Setup")
 
