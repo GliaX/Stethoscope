@@ -27,8 +27,8 @@ res.save("printable_head1.scad","$fn=64;")
 res = Eartube.new.show
 res.save("eartube.scad","$fn=64;")
 
-res = Earplug.new.show
-res.save("earplug.scad","$fn=64;")
+res = EarplugMold.new.output
+res.save("earplug_mold.scad","$fn=64;")
 
 
 @@bom.save("bom.txt")
