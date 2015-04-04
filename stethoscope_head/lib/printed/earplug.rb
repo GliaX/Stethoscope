@@ -41,7 +41,7 @@ class Earplug < CrystalScad::Printed
 	end
 
 	def inner_cut
-		res = cylinder(d:@inner_diameter, h:@cylinder_length + @bell_outer_diameter + 0.2)
+		res = cylinder(d:@inner_diameter, h:@cylinder_length + @bell_outer_diameter + 0.2, fn:6)
 		res += cylinder(d:@exit_diameter, h:@bell_outer_diameter + 0.2)
 		res += sphere(d:@bell_outer_diameter-5).translate(z:@opening_cut+3)	
 		
