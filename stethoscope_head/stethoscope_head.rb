@@ -25,7 +25,7 @@ res = PrintableStethoscopeHead1Assembly.new.show
 res.save("printable_head1.scad","$fn=64;")
 
 res = Eartube.new.show
-res.save("eartube.scad","$fn=512;")
+res.save("eartube.scad","$fn=64;")
 
 res = EarplugMold.new.output
 res.save("earplug_mold.scad","$fn=64;")

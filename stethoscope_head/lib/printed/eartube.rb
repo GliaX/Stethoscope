@@ -42,6 +42,7 @@ class Eartube < CrystalScad::Printed
 
 		# We start with the piece that goes into the ear
 		pipe.line(3) # 3mm line
+
 		# Create a Clockwise angle, which goes into the ear
 		pipe.cw(10,20) # radius, angle
 
@@ -51,6 +52,8 @@ class Eartube < CrystalScad::Printed
 		pipe.cw(33,28) 
 
 		pipe.line(40)
+		# we need more precision here for the bigger bent radiuses
+		pipe.bent_segments = 512
 		pipe.cw(250,8)
 		pipe.line(40)
 		pipe.cw(85,10)
