@@ -16,19 +16,12 @@ require_all "lib/**/*.rb"
 # activated. 
  
 
-res = StethoscopeHeadAssembly.new.show
-#res = Connector.new.show
-
-res.save("stethoscope_head.scad","$fn=64;")
-
-res = PrintableStethoscopeHead1Assembly.new.show
-res.save("printable_head1.scad","$fn=64;")
-
-res = Eartube.new.show
-res.save("eartube.scad","$fn=64;")
-
-res = EarplugMold.new.output
-res.save("earplug_mold.scad","$fn=64;")
+tools = [StethoscopeHeadAssembly,PrintableStethoscopeHead1Assembly,Eartube,EarplugMold]
+# if we have a command line parameter
+if ARGV[0]
+	tools = get_classes_from_file(ARGV[0])
+end
+tools.each{|tool| save_all(tool)}
 
 
 @@bom.save("bom.txt")
