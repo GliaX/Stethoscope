@@ -30,6 +30,8 @@ class EarplugMold < CrystalScad::Printed
 		
 		@syringe_diameter = 4.4
 
+		@layer_height = 0.2
+
 	end
 	
 	def view1
@@ -86,10 +88,7 @@ class EarplugMold < CrystalScad::Printed
 				@bottom_part += b.show.translate(coord).mirror(z:1).translate(z:@bottom_height + @top_height) 
 				@bottom_part += n.show.translate(coord)
 			else
-				# The holes above the nut cutouts will need a tiny bit of plastic in order to print nicely
-				# FIXME: This support structure will work nicely on 0.2mm layer height, but might 
-				# 			 not on others
-				@bottom_part += cylinder(d:3.5,h:2.1).translate(coord)
+				@bottom_part += n.add_support(@layer_height).translate(coord)
 			end	
 		end
 	
