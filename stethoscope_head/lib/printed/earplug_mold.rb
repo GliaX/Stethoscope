@@ -6,11 +6,11 @@ class EarplugMold < CrystalScad::Printed
 		@top_height = 23.2
 	
 		# X & Y dimension of the mold
-		@x = 45
+		@x = 50
 		@y = @x 
 
 		# bolt position from the corners
-		@bolt_pos = 4
+		@bolt_pos = 5
 
 		# offset from the center of individual molds
 		@x_offset = 16
