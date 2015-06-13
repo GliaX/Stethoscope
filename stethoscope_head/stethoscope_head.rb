@@ -15,14 +15,4 @@ require_all "lib/**/*.rb"
 # Design -> Automatic Reload and Compile 
 # activated. 
  
-
-tools = [StethoscopeHeadAssembly,PrintableStethoscopeHead1Assembly,Eartube,EarplugMold]
-# if we have a command line parameter
-if ARGV[0]
-	tools = get_classes_from_file(ARGV[0])
-end
-tools.each{|tool| save_all(tool)}
-
-
-@@bom.save("bom.txt")
-
+save!
