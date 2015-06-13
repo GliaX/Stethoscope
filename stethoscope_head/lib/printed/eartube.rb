@@ -35,6 +35,13 @@ class Eartube < CrystalScad::Printed
 		# in the show method. Values and details can be changed there
 	end
 
+	# fast rendering mockup of the part, for upper harness assembly
+	def lite_view
+		pipe = EartubePipe.new
+		pipe.cw(28,80)
+		pipe.line(100)
+		return pipe.pipe		
+	end
 
 	def part(show)
 		# Initialize the pipe, we've defined the dimensions above in that class already		
