@@ -1,11 +1,11 @@
 class YPiece < CrystalScad::Printed
 
 	def initialize(args={})
-		@x = 65
+		@x = 40
 		@y = 40
 		@bottom_width = 20
 		@top_width = 20
-		@height = 14
+		@height = 17
 
 		@big_tube_insert_length = 6
 	
@@ -17,7 +17,28 @@ class YPiece < CrystalScad::Printed
 
 		# outer diameter of the syringe opening
 		@syringe_diameter = 4.4
+		@conn = Connector.new(tube_additional_inner_diameter:0.3,
+														   base_length:1,	
+															 base_diameter: 8.5,
+															 connector_type: 1,
+															 connector_outside_diameter:8.5,
+															 connector_inner_diameter:5,
+															 connector_exit_diameter:6.5
+				).rotate(x:90).translate(y:0)
 
+		
+
+		@eartube_options = {base_diameter:4.7,
+												base_length:1,
+												connector_length:10,
+												connector_inner_diameter:2.5,
+												connector_outside_diameter:4.7,	
+												connector_exit_diameter: 3,
+												connector_type: 1
+												}
+		@eartube_conn = Connector.new(@eartube_options).rotate(x:-90).rotate(z:-15).translate(x:14,y:38,z:-(@conn.connector_outside_diameter-@eartube_options[:connector_outside_diameter])/2.0)
+		@eartube_conn2 = Connector.new(@eartube_options).rotate(x:-90).rotate(z:-15).translate(x:14,y:38,z:-(@conn.connector_outside_diameter-@eartube_options[:connector_outside_diameter])/2.0).mirror(x:1)
+	
 	end
 
 	def basic_shape
@@ -68,35 +89,25 @@ class YPiece < CrystalScad::Printed
 
 	end
 
-	def part(show)
-		lower = half_part.color("DarkSlateBlue")		
-		upper = half_part.mirror(z:1).translate(z:@height).color("powderblue")
-
-		bolt = Bolt.new(3,14).mirror(z:1).translate(x:-10,y:30,z:16.4)
-		nut = Nut.new(3,support:true).translate(x:-10,y:30)
-
-		lower -= bolt.output
-		lower -= nut	
-		upper -= bolt.output
-
-		bolt = Bolt.new(3,14).mirror(z:1).translate(x:10,y:30,z:16.4)
-		nut = Nut.new(3,support:true).translate(x:10,y:30)
-
-		lower -= nut	
-		lower -= bolt.output
-		upper -= bolt.output
-
-		if show
-			res = lower 
-			res += upper
-#			res += bolt.show			
+	def inner_cut
+		res = cylinder(d:7,h:5).rotate(x:90).translate(y:5)
+		p = Pipe.new(diameter:2.5)
+		p.line(40)
+		p.cw(10,21)
 	
-			res += @big_tube.show
-			res += @eartube.lite_view
-		else
-			res = lower
-			res += upper.mirror(z:1).rotate(z:180).translate(x:45,y:40,z:@height)
-		end
+		res += p.pipe.rotate(z:90).translate(z:-1.9)
+	
+	end
+
+	def part(show)
+
+		res = basic_shape.translate(z:-@conn.connector_outside_diameter/2.0)
+		res += @conn.show
+		res -= inner_cut
+		res -= inner_cut.mirror(x:1)
+		
+		res += @eartube_conn.show
+	 	res += @eartube_conn2.show
 
 		res
 	end
