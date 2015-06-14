@@ -72,14 +72,14 @@ class YPiece < CrystalScad::Printed
 		lower = half_part.color("DarkSlateBlue")		
 		upper = half_part.mirror(z:1).translate(z:@height).color("powderblue")
 
-		bolt = Bolt.new(3,14).translate(x:-10,y:30)
+		bolt = Bolt.new(3,14).mirror(z:1).translate(x:-10,y:30,z:16.4)
 		nut = Nut.new(3,support:true).translate(x:-10,y:30)
 
-		lower -= nut	
 		lower -= bolt.output
+		lower -= nut	
 		upper -= bolt.output
 
-		bolt = Bolt.new(3,14).translate(x:10,y:30)
+		bolt = Bolt.new(3,14).mirror(z:1).translate(x:10,y:30,z:16.4)
 		nut = Nut.new(3,support:true).translate(x:10,y:30)
 
 		lower -= nut	
@@ -89,6 +89,7 @@ class YPiece < CrystalScad::Printed
 		if show
 			res = lower 
 			res += upper
+#			res += bolt.show			
 	
 			res += @big_tube.show
 			res += @eartube.lite_view
