@@ -2,7 +2,7 @@ class Earplug < CrystalScad::Printed
 	
 	def initialize(args={})
 		# outer diameter of the bell
-		@bell_outer_diameter = 14
+		@bell_outer_diameter = 12.25
 		# its inner diameter		
 		@inner_bell_diameter = @bell_outer_diameter-6
 
@@ -15,13 +15,13 @@ class Earplug < CrystalScad::Printed
 		# length and outer diameter of the cylinder that mounts onto the eartube
 		# I'm making them longer than the littman ones in order to get a proper seal
 		@cylinder_length = args[:cylinder_length] || 20.5	# Length from the center of the bell
-		@cylinder_outer_diameter = 10.5
+		@cylinder_outer_diameter = 9.5
 
 		# inner diameter of the earpiece
 		@inner_diameter = 5
 
 		# inner diameter of the exit that sits towards the ear
-		@exit_diameter = 6.9
+		@exit_diameter = 6
 		
 		
 

@@ -19,11 +19,11 @@ class YPiece < CrystalScad::Printed
 		@syringe_diameter = 4.4
 		@conn = Connector.new(tube_additional_inner_diameter:0.3,
 														   base_length:1,	
-															 base_diameter: 8.5,
+															 base_diameter: 6.5,
 															 connector_type: 1,
-															 connector_outside_diameter:8.5,
-															 connector_inner_diameter:5,
-															 connector_exit_diameter:6.5
+															 connector_outside_diameter:6.5,
+															 connector_inner_diameter:4,
+															 connector_exit_diameter:4.5
 				).rotate(x:90).translate(y:0)
 
 		
@@ -90,12 +90,12 @@ class YPiece < CrystalScad::Printed
 	end
 
 	def inner_cut
-		res = cylinder(d:7,h:5).rotate(x:90).translate(y:5)
+		res = cylinder(d:5.5,h:5).rotate(x:90).translate(y:5)
 		p = Pipe.new(diameter:2.5)
 		p.line(40)
-		p.cw(10,21)
+		p.cw(10,20.9)
 	
-		res += p.pipe.rotate(z:90).translate(z:-1.9)
+		res += p.pipe.rotate(z:90).translate(z:-0.9)
 	
 	end
 
