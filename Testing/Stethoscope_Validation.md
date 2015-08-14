@@ -10,14 +10,14 @@ More recently in 2008 *Finkelstein* expanded this evaluation to include a subjec
 
 The frequency response of various Glia Model stethoscopes was determined using an experimental setup modelled off of the one used by *Watrous, Grove and Bowen* [5] shown below.
 
-![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/ModelSetup.PNG "Approximate Test Setup")
+![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/ModelSetup.PNG "Approximate Test Setup")
 
 In the above topology, the balloon contains 2L of water (2000g), acoustic input is supplied via a pair of Monster DNA headphones and sounds were recorded using a Hama microphone. Audacity was used to create a 15 second audio clip of white noise which was played through the setup with the output of each stethoscope being recorded for spectral analysis. The spectrum produced by each stethoscope model was then compared to that of the Littmann Cardiology III. These plots are shown below     
 
 ##Results
-![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/AllStethComp.png "All Stethoscope Heads")
+![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/AllStethComp.png "All Stethoscope Heads")
 ---
-![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/2015-03-31/Litt3vsGlia2.png "Glia 2 Vs. Littmann Cardiology III")
+![alt text](https://github.com/GliaX/Stethoscope/blob/master/Testing/Litt3vsGlia2.png "Glia 2 Vs. Littmann Cardiology III")
 
 ##References 
 [1] Rushmer, R.F. *Cardiovascular Dynamics 4th Edition* 1976 WB Saunders
