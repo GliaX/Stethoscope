@@ -18,7 +18,10 @@ Bill of Materials
 * 40cm Silicone 12mm OD, 8mm ID
 * 20cm UPVC 6mm OD, 4mm ID
 * Silicone for ear plugs
-* Diaphragm (TODO: Expand on this)
+* Diaphragm: Cut from a report cover with approx 0.35mm plastic sheet, we used a Staples 21639 (UPC 718103160223)
+* Silicone / Rubber ring for diaphram mount
+
+
 
 Print Instructions
 ==================

@@ -7,10 +7,10 @@ class EartubePipe < CrystalScad::Pipe
 
 		# Inner diameter of the Littmann version is about 3mm, I'm going for a slightly bigger inner diameter
 		# here because of possible shrinkage and print imperfections
-		@inner_diameter = 3.7
+		@inner_diameter = args[:inner_diameter] || 3.7
 
 		# Outer diameter of the hexagonal outer diameter
-		@diameter = @inner_diameter + 3 
+		@diameter = args[:outer_diameter] || 6.7 
 	end
 
 	# This defines the outside shape of the pipe
@@ -33,10 +33,25 @@ class Eartube < CrystalScad::Printed
 	def initialize		
 		# I have removed the previous parametric parameters in order to make it easier to model	
 		# in the show method. Values and details can be changed there
+		@color = "LavenderBlush"
+	end
+
+	# fast rendering mockup of the part, for upper harness assembly
+	def lite_view
+		pipe = EartubePipe.new(inner_diameter:0)
+		pipe.cw(28,80)
+		pipe.line(100)
+		return transform(colorize(pipe.pipe))		
+	end
+
+	def output
+		pipe = EartubePipe.new(inner_diameter:0)
+		pipe.line(30)
+		return transform(colorize(pipe.pipe))		
 	end
 
 
-	def part(show)
+	def show
 		# Initialize the pipe, we've defined the dimensions above in that class already		
 		pipe = EartubePipe.new
 
@@ -60,7 +75,7 @@ class Eartube < CrystalScad::Printed
 		pipe.line(20)
 		
 
-		return pipe.pipe
+		return transform(colorize(pipe.pipe))
 	end
 
 end

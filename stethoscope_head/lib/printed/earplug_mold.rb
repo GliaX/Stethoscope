@@ -13,7 +13,7 @@ class EarplugMold < CrystalScad::Printed
 		@bolt_pos = 5
 
 		# offset from the center of individual molds
-		@x_offset = 16
+		@x_offset = 16.5
 		# Rotation of each mold from center, will affect number of molds
 		@rotation = 45
 		

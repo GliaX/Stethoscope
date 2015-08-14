@@ -49,7 +49,7 @@ class Connector < CrystalScad::Printed
 
 	end
 
-	def show
+	def part(show)
 		# the "base" is the part that sticks deep into the stethoscope. 
 		base = cylinder(d:@base_diameter,h:@base_length)
 
