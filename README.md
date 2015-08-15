@@ -9,18 +9,25 @@ Currently, the stethoscope resulting from this project functions as well as the 
 Bill of Materials
 =================
 
-See Bill_of_materials.md
-
 **Printed parts:**
 * 1 stethoscope head (head.stl)
 * 2 ear tubes (eartube.stl)
 * 1 earplug mold (earplug_mold.stl)
 
 **Other hardware:**
+Some vendors are suggested. See Bill of materials ODS file for more information.
 * 40cm Silicone 12mm OD, 8mm ID
+ * [8MM I.D X 12MM O.D NGP60 Clear Transulcent Silicone Hose Pipe Tubing](http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp) (USD$6.95)
+
 * 20cm UPVC 6mm OD, 4mm ID
+ * [Hi-Flex 4mm ID - 6mm OD Flexible PVC Tubing : Clear](http://www.amazon.co.uk/Hi-Flex-4mm-ID-Flexible-Tubing/dp/B004CLLJFS) (USD$11.48)
+
 * Silicone for ear plugs
-* Diaphragm: Cut from a report cover with approx 0.35mm plastic sheet, we used a Staples 21639 (UPC 718103160223)
+ * [Moldable Silicone Ear Plugs](http://www.earplugstore.com/moldable-silicone-ear-plugs.html) (USD$1.80)
+
+* Diaphragm: Cut from a report cover with approx 0.35mm plastic sheet
+ * [Staples 21639 report cover (UPC 718103160223)](http://www.staples.ca/en/Staples-Swing-Lock-Report-Cover-Clear-with-Black-Spine-5-Pack/product_780953_2-CA_1_20001) (USD$8.84)
+ 
 * Silicone / Rubber ring for diaphram mount
 
 
