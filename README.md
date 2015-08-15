@@ -9,6 +9,8 @@ Currently, the stethoscope resulting from this project functions as well as the 
 Bill of Materials
 =================
 
+See Bill_of_materials.md
+
 **Printed parts:**
 * 1 stethoscope head (head.stl)
 * 2 ear tubes (eartube.stl)
@@ -37,3 +39,9 @@ Assembly Instructions
 * Attach the T-piece to the ear tubes.
 * Attach the ear tubes to the molded earplugs.
 * Test the stethoscope as per the validation instructions.
+
+
+Other stethoscopes
+==================
+Others have made 3D printed stethoscopes too. See:
+* https://www.youmagine.com/designs/stethoscope-chestpiece
