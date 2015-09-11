@@ -1,5 +1,6 @@
+//change
 module tube(id,od,l){
-   render()difference(){
+   difference(){
     cylinder(r=od/2,l,$fn=100,center=true);
     translate([0,0,-1])cylinder(r=id/2,l+2,$fn=100,center=true);
     
@@ -46,3 +47,18 @@ translate([0,-8.5,40])tube(7.5,9,40);
 translate([0,0,0])mirror()channel();
 }
 %cube([200,200,0.01],center=true);
+
+#translate([2.8,0,0]){rotate(a=180,v=[0,0,1])
+difference(){
+    
+rotate(a=6,v=[0,-1,0]){
+translate([7,0,-5.3]){
+cube ([20,20,10],center=true);}}
+translate([0,0,-5])    cube ([70,70,10],center=true);
+translate([0,0,-8])    cube ([70,70,10],center=true);
+}}
+translate([-33,9,0])cube([5,5,1.75]);
+translate([-33,-14,0])cube([5,5,1.75]);
+translate([-30,-15,0])cube([13,30,1.45]);
+	
+	
