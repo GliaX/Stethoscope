@@ -17,7 +17,7 @@ Bill of Materials
 **Other hardware:**
 Some vendors are suggested. See Bill of materials ODS file for more information.
 * 40cm Silicone 12mm OD, 8mm ID
- * [8MM I.D X 12MM O.D NGP60 Clear Transulcent Silicone Hose Pipe Tubing](http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp) (USD$6.95)
+ * [8MM I.D X 12MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp) (USD$6.95)
 
 * 20cm UPVC 6mm OD, 4mm ID
  * [Hi-Flex 4mm ID - 6mm OD Flexible PVC Tubing : Clear](http://www.amazon.co.uk/Hi-Flex-4mm-ID-Flexible-Tubing/dp/B004CLLJFS) (USD$11.48)
