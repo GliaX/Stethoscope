@@ -3,7 +3,7 @@ class UpperHarnessAssembly < CrystalScad::Assembly
 	skip :output
 
 	def show
-		big_tube = BigTube.new
+#		big_tube = BigTube.new
 		eartube = Eartube.new.rotate(x:-30)
 		eartube2 = Eartube.new.mirror(y:1).rotate(x:30).translate(y:-50)
 
