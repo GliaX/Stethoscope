@@ -1,16 +1,16 @@
 // Bottom ring
 module bottom_ring($fn=360) {
     difference() {
-        cylinder(h = 0.5, r = 22);
-        cylinder(h = 0.5, r = 20);
+        cylinder(h = 0.5, r = 43.43/2);
+        cylinder(h = 0.5, r = 18);
     }
 }
 
 // Side wall
 module side_wall($fn=360) {
     difference() {
-        cylinder(h = 5, r = 23);
-        cylinder(h = 5, r = 22);
+        cylinder(h = 6, r = 43.43/2);
+        cylinder(h = 6, r = 20);
     }
 }
 
