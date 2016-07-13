@@ -67,6 +67,9 @@ were used to create all STL files. To recreate the stethoscope head, simpley do:
 gem install crystalscad
 ruby source_files/stethoscope_head/stethoscope_head.rb
 ```
+The SCAD files output from CrystalSCAD are found in `source_files/stethoscope_head/output` and are named as follows:
+* PrintableStethoscopeHead1Assembly_output.scad - The head
+* EarplugMold_output.scad - Earplug mold
 
 Other stethoscopes
 ==================
