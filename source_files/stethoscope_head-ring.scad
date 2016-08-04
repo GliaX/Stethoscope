@@ -1,4 +1,4 @@
-$fn=64;
+$fn=365;
 
 // Take output for original head and put it in one module
 module original_head() {
