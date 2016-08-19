@@ -30,7 +30,7 @@ Some vendors are suggested. See Bill of materials ODS file for more information.
 * Diaphragm: Cut from a report cover with approx 0.35mm plastic sheet
  * [Staples 21639 report cover (UPC 718103160223)](http://www.staples.ca/en/Staples-Swing-Lock-Report-Cover-Clear-with-Black-Spine-5-Pack/product_780953_2-CA_1_20001) (USD$8.84)
  
-** Optional hardware**:
+**Optional hardware**:
 * Metal spring for holding ear tubes together
 
 
