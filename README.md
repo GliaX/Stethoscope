@@ -27,8 +27,9 @@ Some vendors are suggested. See Bill of materials ODS file for more information.
 * Silicone for ear plugs
  * [Moldable Silicone Ear Plugs](http://www.earplugstore.com/moldable-silicone-ear-plugs.html) (USD$1.80)
 
-* Diaphragm: Cut from a report cover with approx 0.35mm plastic sheet
+* Diaphragm: 40mm diameter cut from a report cover with approx 0.35mm plastic sheet
  * [Staples 21639 report cover (UPC 718103160223)](http://www.staples.ca/en/Staples-Swing-Lock-Report-Cover-Clear-with-Black-Spine-5-Pack/product_780953_2-CA_1_20001) (USD$8.84)
+ * You can cut the diaphragm by hand or with a stamp like [this one](https://www.amazon.ca/Karujimu-ki-jumbo-craft-circle-CN45004/dp/B001CBY41W)
  
 **Optional hardware**:
 * Metal spring for holding ear tubes together
@@ -48,7 +49,7 @@ Assembly Instructions
 =====================
 
 * Insert silicone into mold and allow to set as per manufacturer instructions.
-* Attach the diaphragm to the stethoscope head.
+* Attach the diaphragm (40mm) to the stethoscope head.
 * Attach the stethoscope head to the silicone tube.
 * Attach the silicone tube to the T-Piece.
 * Attach spring to ear tubes.
