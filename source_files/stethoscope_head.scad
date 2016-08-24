@@ -1,4 +1,4 @@
-$fn=64;
+$fn=365;
 union(){translate(v = [0, 0, 17.8])
 mirror(v = [0, 0, 1])
 difference(){union(){intersection(){translate(v = [-50.0, -50.0])
