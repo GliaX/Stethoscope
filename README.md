@@ -43,6 +43,9 @@ though it is acceptable for the first layer to be 0.3mm.
 
 **INFILL MUST BE 100%.** Otherwise, the stethoscope will not print well.
 
+As per [this issue](https://github.com/GliaX/Stethoscope/issues/35), it appears 
+that there are issues with other slicers. Please use [https://slic3r.org](Slic3r) 
+for slicing.
 
 Assembly Instructions
 =====================
