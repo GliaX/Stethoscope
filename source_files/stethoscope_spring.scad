@@ -9,14 +9,14 @@ difference(){
     translate([-45,0,0])cube([90,45,10]);//cut
 }
 
-translate([ro-2,0,0])hole();
-translate([-ro-10,0,0])hole();
+translate([ro-2,0,0])hole(15);
+translate([-ro-10,0,0])hole(-15);
 
 //making a cube with tube hole
-module hole(){
+module hole($rotate){
     translate([0,10,0])difference(){
         cube([12,10,10]); //tube housing outer shell
-        translate([6,0,5])rotate([-90,15,0])cylinder(r=3.7,h=11,$fn=6);//ear tube diameter
+        translate([6,0,5])rotate([-90,$rotate,0])cylinder(r=3.5,h=11,$fn=6);//ear tube diameter
         }
  }
 
