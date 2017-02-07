@@ -1,24 +1,58 @@
 ro=20;
 
-// Create the spring
-difference(){
+// Create the first leaf (outside) of the spring
+
+module outerSpring() {
     difference(){
-        cylinder(r=ro,h=10,$fn=60);//outer diameter
-        cylinder(r=ro-2,h=10,$fn=60);//inner diameter
+        cylinder(r=ro,h=10,$fn=60); //outer diameter
+        cylinder(r=ro-2,h=10,$fn=60); //inner diameter
     }
-    translate([-45,0,0])cube([90,45,10]);//cut
 }
 
-translate([ro-2,0,0])hole(15);
-translate([-ro-10,0,0])hole(-15);
+// Create the second leaf (inside) of the spring
+module innerSpring() {
+    translate([0,8,0]) 
+    difference(){
+        cylinder(r=ro+2,h=10,$fn=60); //outer diameter
+        cylinder(r=ro,h=10,$fn=60); //inner diameter
+    }
+}
 
-//making a cube with tube hole
+
+// Create connector and hole for eartube.
 module hole($rotate){
-    translate([0,10,0])difference(){
-        cube([12,10,10]); //tube housing outer shell
-        translate([6,0,5])rotate([-90,$rotate,0])cylinder(r=3.5,h=11,$fn=6);//ear tube diameter
+    radius = 7;
+    difference() {
+        hull(){
+            translate([-radius,-radius,0]) cube([2,10,20]);
+            cylinder(r=radius,h=12);
         }
+        translate([1,0,0]) rotate([0,0,$rotate])cylinder(r=3.5,h=25,$fn=6);//ear tube diameter
+    }
  }
 
-translate([ro-2,0,0])cube([2,10,10]);
-translate([-ro,0,0])cube([2,10,10]);
+// Create the final piece
+union() {
+    difference(){
+
+        // Springs
+        union() {
+            outerSpring();
+            innerSpring();
+        }
+        
+        // Cuts
+        translate([-45,0,0])cube([90,45,10]); //cut centre
+        translate([ro,-ro,0])cube([90,45,10]); //cut left
+        translate([-ro-90,-ro,0])cube([90,45,10]); //cut right
+    }
+
+
+    // Connectors
+    translate([ro+5,30,7]) rotate([90,0,0]) hole(15);
+    translate([-ro-5,30,7]) mirror([1,0,0]) rotate([90,0,0]) hole(15);
+    
+    //Connect connectors to springs
+    translate([ro-2,0,0])cube([2,20,10]);
+    translate([-ro,0,0])cube([2,10,10]);
+}
