@@ -26,7 +26,7 @@ yarray2=[0,0,0,0.85,9.29,14.11,29.85,30.29,32.11,32.6,33.41,34.83,36.42,37.46,38
 
 difference(){
     union(){
-for(i=[0:1:33]){
+for(i=[0:1:33]){//building the shape of the outer shell of the ear tube till the ear bud area
     hull(){
     translate([xarray[i],yarray[i],0])//cylinder(r=.5,h=10);
         sphere(3.5,$fn=10);
@@ -36,7 +36,9 @@ for(i=[0:1:33]){
         }}
         // ear plug
         // i took the last two points on the array and took a moddle point  turns out that the distance is 2mm which is enough 
-     hull(){
+        
+        
+     hull(){//bulding the ear bud area
      translate([xxa[0],yya[0],0])
 sphere(3,$fn=10);
          translate([xxa[1],yya[1],0])
@@ -58,7 +60,7 @@ translate([xxa[2],yya[2],0])rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cyl
         }
         union(){
       translate([-10,-5,-5])cube([10,10,10]);  
-for(i=[0:1:34]){
+for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud area
     hull(){
     translate([xarray2[i],yarray2[i],0])//cylinder(r=.5,h=10);
         sphere(2,$fn=10);
@@ -66,22 +68,35 @@ for(i=[0:1:34]){
         sphere(2,$fn=10);
     
         }}
-           hull(){
+        
+        ///////////////////////////////////
+        //building the shape of the hole of the tube at the earbud THE START
+           hull(){  
     translate([xarray2[35],yarray2[35],0])//cylinder(r=.5,h=10);
-        sphere(1.2,$fn=10);
-    translate([xarray2[
-               36],yarray2[36],0])//cylinder(r=.5,h=10);
+        sphere(.8,$fn=10);
+    translate([xxa[2]-1,yya[2]+.7,0])//cylinder(r=.5,h=10);
         sphere(1.8,$fn=10);
     
         }
+        
            hull(){
+    translate([xarray2[35],yarray2[35],0])//cylinder(r=.5,h=10);
+        sphere(2,$fn=10);
+    translate([xxa[2],yya[2],0])//cylinder(r=.5,h=10);
+        sphere(.8,$fn=10);
+    
+        }
+
+//building the shape of the hole of the tube at the earbud  THE END        
+///////////////////////////
+       /*    hull(){
     translate([xarray2[34],yarray2[34],0])//cylinder(r=.5,h=10);
         sphere(2,$fn=10);
     translate([xarray2[35],yarray2[35],0])//cylinder(r=.5,h=10);
         sphere(1.5,$fn=10);
     
-        }
-     // cube([200,200,10]);// cut in half 
+        }*/
+      cube([200,200,10]);// cut in half 
         
         }}
                  translate([xxa[2]+1,yya[2]-4,-3.4])
