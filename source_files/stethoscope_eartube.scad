@@ -96,7 +96,7 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
         sphere(1.5,$fn=10);
     
         }*/
-      cube([200,200,10]);// cut in half 
+      //cube([200,200,10]);// cut in half 
         
         }}
                  translate([xxa[2]+1,yya[2]-4,-3.4])
