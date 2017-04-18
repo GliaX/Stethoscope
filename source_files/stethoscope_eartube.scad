@@ -26,6 +26,8 @@ yarray2=[0,0,0,0.85,9.29,14.11,29.85,30.29,32.11,32.6,33.41,34.83,36.42,37.46,38
 
 difference(){
     union(){
+   difference(){
+       union(){
 for(i=[0:1:33]){//building the shape of the outer shell of the ear tube till the ear bud area
     hull(){
     translate([xarray[i],yarray[i],0])//cylinder(r=.5,h=10);
@@ -34,24 +36,36 @@ for(i=[0:1:33]){//building the shape of the outer shell of the ear tube till the
         sphere(3.5,$fn=10);
     
         }}
+        hull(){
+           translate([xarray[34],yarray[34],0])//cylinder(r=.5,h=10);
+        sphere(3.5,$fn=10);
+        
+              translate([xxa[2],yya[2],0])
+rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3.5,h=1.5);//earbud
+        }
+            }
+        translate([xxa[2]-.1,yya[2],0])rotate([0,0,-30])rotate([0,90,0])cylinder(r=4,h=3);//earbud
+            
+      
+    }
         // ear plug
         // i took the last two points on the array and took a moddle point  turns out that the distance is 2mm which is enough 
         
         
-     hull(){//bulding the ear bud area
+    /* hull(){//bulding the ear bud area
      translate([xxa[0],yya[0],0])
 sphere(3,$fn=10);
          translate([xxa[1],yya[1],0])
 rotate([0,0,-30])rotate([0,90,0])cylinder(r=1,h=1);
-     }
+     }*/
      
          
      translate([xxa[1],yya[1],0])
 rotate([0,0,-30])rotate([0,90,0])cylinder(r=1,h=1);
          translate([xxa[2],yya[2],0])
-rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3,h=1.5);
+rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3,h=1.5);//earbud
              
-translate([xxa[2],yya[2],0])rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=2,h=3);
+translate([xxa[2],yya[2],0])rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=2,h=3.5);
      
      
 
