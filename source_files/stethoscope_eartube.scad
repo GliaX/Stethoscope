@@ -89,7 +89,7 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
     translate([xarray2[35],yarray2[35],0])//cylinder(r=.5,h=10);
         sphere(.8,$fn=10);
     translate([xxa[2]-1,yya[2]+.7,0])//cylinder(r=.5,h=10);
-        sphere(1.8,$fn=10);
+        sphere(1.5,$fn=10);
     
         }
         
@@ -97,7 +97,7 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
     translate([xarray2[35],yarray2[35],0])//cylinder(r=.5,h=10);
         sphere(2,$fn=10);
     translate([xxa[2],yya[2],0])//cylinder(r=.5,h=10);
-        sphere(.8,$fn=10);
+        sphere(.1,$fn=10);
     
         }
 
@@ -110,7 +110,7 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
         sphere(1.5,$fn=10);
     
         }*/
-      //cube([200,200,10]);// cut in half 
+     // cube([200,200,10]);// cut in half 
         
         }}
                  translate([xxa[2]+1,yya[2]-4,-3.4])
