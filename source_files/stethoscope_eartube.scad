@@ -44,7 +44,7 @@ for(i=[0:1:33]){//building the shape of the outer shell of the ear tube till the
 rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3.5,h=1.5);//earbud
         }
             }
-        translate([xxa[2]-.1,yya[2],0])rotate([0,0,-30])rotate([0,90,0])cylinder(r=4,h=3);//earbud
+        translate([xxa[2]-.1,yya[2],0])rotate([0,0,-30])rotate([0,90,0])cylinder(r=4,h=3.5);//earbud
             
       
     }
@@ -63,7 +63,7 @@ rotate([0,0,-30])rotate([0,90,0])cylinder(r=1,h=1);
      translate([xxa[1],yya[1],0])
 rotate([0,0,-30])rotate([0,90,0])cylinder(r=1,h=1);
          translate([xxa[2],yya[2],0])
-rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3,h=1.5);//earbud
+rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3.5,h=1.5);//earbud
              
 translate([xxa[2],yya[2],0])rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=2,h=3.5);
      
@@ -113,5 +113,4 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
      // cube([200,200,10]);// cut in half 
         
         }}
-                 translate([xxa[2]+1,yya[2]-4,-3.4])
-rotate([0,0,60])cube([5,5,.4]);
+                // translate([xxa[2]+1,yya[2]-4,-3.4])rotate([0,0,60])cube([5,5,.4]);//earbud support
