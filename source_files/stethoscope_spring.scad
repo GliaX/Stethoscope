@@ -42,7 +42,7 @@ module hole($rotate){
         // Springs
         union() {
             outerSpring();
-            innerSpring();
+//            innerSpring();
        // cube(1);
             }
         union(){
