@@ -15,7 +15,7 @@ Bill of Materials
 **Printed parts:**
 * 1 stethoscope head (head.stl)
 * 1 stethoscope ring (ring.stl)
-* 1 Y-piece
+* 1 Y-piece (y-piece.stl)
 * 2 ear tubes (eartube.stl)
 * 1 spring (spring.stl)
 
