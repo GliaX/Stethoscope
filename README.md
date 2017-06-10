@@ -22,11 +22,11 @@ Bill of Materials
 
 **Other hardware:**
 Some vendors are suggested. See Bill of materials ODS file for more information.
-* 40cm Silicone 12mm OD, 8mm ID
+* 40cm Silicone 12mm outer diameter (OD), 8mm inner diameter (ID): To connect the head to the Y-piece.
  * [8MM I.D X 12MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp) (USD$6.95)
 
-* 20cm Silicone 8mm OD, 6mm ID
-
+* 20cm Silicone 8mm OD, 4mm ID: To connect the eartubes to the central Y-piece.
+ * NOTE: The printed eartubes are 6mm, so these tubes will initially be difficult to fit to them, but are recommended as they attach more reliably vs. 6mm ID silicone tubes.
 
 * Diaphragm: 40mm diameter cut from a report cover with approx 0.35mm plastic sheet
  * [Staples 21639 report cover (UPC 718103160223)](http://www.staples.ca/en/Staples-Swing-Lock-Report-Cover-Clear-with-Black-Spine-5-Pack/product_780953_2-CA_1_20001) (USD$8.84)
@@ -62,11 +62,11 @@ Assembly Instructions
 * Attach the stethoscope head to the 8mm ID silicone tube.
 * Attach the other end of the 8mm ID tube to the large end of the Y-piece.
 * Attach the earplugs onto the matching grooves on the eartubes.
-* Cut the 6mm ID silicone tubing in half.
-* Attach the two 6mm ID tubes to the eartubes.
-* Thread the two holes of the 3D printed spring through these tubes, and press them onto where the 6mm ID tube and the printed eartube meet.
+* Cut the 4mm ID silicone tubing in half.
+* Attach the two 4mm ID tubes to the eartubes.
+* Thread the two holes of the 3D printed spring through these tubes, and press them onto where the 4mm ID tube and the printed eartube meet.
 	* Optionally, test the width of the spring by placing the eartubes, now connected by the spring, into your ears. Remove the spring and use a heat gun to bend the spring as desired.
-* Attach the other ends of the two 6mm ID tubes to the smaller ends of the Y-Piece.
+* Attach the other ends of the two 4mm ID tubes to the smaller ends of the Y-Piece.
 * Test the stethoscope as per the validation instructions.
 
 
