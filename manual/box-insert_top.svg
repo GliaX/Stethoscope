@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="box-insert-top.svg"
+   sodipodi:docname="box-insert_top.svg"
    inkscape:export-filename="/home/orangey/workspace/Stethoscope/manual/box-insert-top.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -205,7 +205,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="695.89021"
+     inkscape:cx="582.75312"
      inkscape:cy="40.382269"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -301,16 +301,16 @@
          id="tspan9555">An Open Welcome</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="620"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="771.15234"
        y="713.0246"
        id="text6914"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6916"
-         x="620"
+         x="771.15234"
          y="713.0246"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">سماعة طبية</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">نرحب بكم</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
