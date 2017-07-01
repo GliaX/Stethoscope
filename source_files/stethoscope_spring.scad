@@ -28,9 +28,9 @@ module hole($rotate){
             cylinder(r=radius,h=12);
         }
         translate([1,0,0]) rotate([0,0,$rotate]) hull(){
-        translate([0,0,-10])sphere(3.8
+        translate([0,0,-10])scale([1.2,1,1])sphere(3.7
             ,$fn=10);//ear tube diameter
-    translate([0,0,30])sphere(3.8,$fn=10);
+    translate([0,0,30])scale([1.2,1,1])sphere(3.7,$fn=10);
        }//ear tube diameter
     }
  }
@@ -59,4 +59,4 @@ module hole($rotate){
     
     //Connect connectors to springs
     translate([ro-2,0,0])cube([3,20,10]);
-    translate([-ro-1,0,0])cube([3,20,10]);
+translate([-ro-1,0,0])cube([3,20,10]);
