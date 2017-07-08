@@ -1,0 +1,216 @@
+June 23, 2017
+
+Dear reviewers,
+
+Thank you for considering this work for publication in PLOS ONE. We have reviewed the proposed revisions and agree that they greatly improve the quality of our manuscript. In particular, both reviewers raised concerns about Figure 2. In response, we have dramatically simplified the figure to compare only the currently used Glia model stethoscope to the Littmann III. This entailed removing the inferior models from Figure 2A (100% infill, ABS, 6mm channel; 15% infill, ABS, 3mm channel; 100% infill, ABS, 3mm channel deep cup) entirely. The purpose of showing this data in our previous figure was to highlight the iterative nature of the development process, but this was at the cost of complicating the figure unnecessarily. Figure 2B has been replaced with a line graph showing the difference in attenuation between the Glia model and the Littmann III. 
+In addition, we have addressed each of your other concerns, which are addressed below.
+
+Reviewer #1: 
+This is a good and useful paper but I think both the paper and the presentation can be improved to further enhance the impact of this work.
+
+1. ® symbol is distracting and not necessary or wanted in an academic work - please remove.
+
+We agree that this does not belong in academic work. All ® symbols have been removed.
+
+
+2. On the same front - mentioning the name brand of a stethoscope you are comparing it to in the abstract seems excessive.
+
+Thank you for the suggestion. At the time of the writing of this paper, the Littmann Cardiology III was one of two gold-standard stethoscopes available. Identifying it by name allows most readers who have used a stethoscope to tangibly understand the quality of the 3D printed stethoscope we are proposing. While we are willing to remove the name if it presents issues, we believe it would reduce the ability of most readers to relate directly.
+
+
+3. page 9 line 2 it would be good to explain why this is (e.g. the RepRap project and associated publications) and provide a range of costs for the 3d printers that could produce the Glia
+
+We have added a line and citation regarding the RepRap project. Any printer capable of printing in ABS should be able to create our device and this statement has been added to the manuscript. Adding a cost range for such printers is difficult as the cost range will be extremely variable depending on need and location of manufacture. For example, the cost of the printers made in Gaza can be approximated to $300, whereas a midrange Stratasys printer costs over $20,000. We have added a line that a printer capable of this work should be easily obtainable for under $1000.
+
+
+4. It is not clear to me what the benefit of CrystalSCAD is for this application - why not just use OpenSCAD for all design files? Please explain.
+
+At the time of design, CrystalSCAD permitted the creation of complex geometry that was not yet supported by OpenSCAD. This was needed in both the stethoscope head and the eartubes. While the design files have been ported to OpenSCAD for the most part, the geometry of the stethoscope head remains a hybrid of CrystalSCAD-generated and OpenSCAD, and will likely require significant revision. We have added a summary of this explanation to the Methods section.
+
+
+5. Please include what kind of 3d printer was used, what the settings were (e.g. fill density, etc.)
+
+The printer used (Prusa Mk ii) has been included in the methods as well as some additional printer setting. The infill density and layer height was included in the methods section.
+
+
+6. The costs in Table 1 - do not appear to be conservative to me – most 3d printer users do not make their own filament -- I recommend expanding table 1 -- with a column for using commercial filament, the column you have using commercial abs pellets, and then a 3rd column for using recyclebot based recycled abs (e.g. just elec costs to run it). This will demonstrate the full range of potential costs for the Glia in the field.
+
+This is an excellent suggestion and we agree that adding a range of costs of the Glia adds to the manuscript. We have added an additional column into Table 1 listing the cost using commercial ABS filament with an estimated cost of $30/kg. This table now incorporates potentially the lowest end of cost (as expected in Gaza) as well as the expected cost for a commercial user. 
+
+
+7. Include some other commercial stethoscope costs.
+
+The cost of the Littmann Cardiology III, Littmann Cardiology IV, and Welch Allyn Harvey Elite were added to the discussion section.
+
+
+8. Include a slightly wider range of literature review (e.g. there is a lot of work talking about using 3D printing for sustainable development and medicine in the developing world). Something like this would fit well into the mission of Field Ready -- and would also be considered "open source appropriate technology".
+
+We respectfully disagree with the reviewers regarding the importance of reviewing the literature around use of this technology in low resource settings such as rural communities and low and middle income countries (LMIC). We are aware of and in the process of starting partnerships with organizations such as Global Humanitarian Lab and Field Ready. Corresponding author Tarek Loubani's primary interest in this research is indeed founded in making this work widely available in the context of LMICs. His grant award from the Shuttleworth Foundation is completely on the basis of his work in the Gaza Strip.
+
+However, we have chosen not to focus on the sustainable / development context for two reasons:
+
+i. The main purpose of this paper is to publish the methods and results for producing a high-quality low-cost stethoscope using an innovation in technology (3D printing) that has allowed for this. In that sense, this is mostly intended as a technical piece, even if we give a small nod in some places to the context from which this research was born.
+
+ii. We do not wish for this to be limited to a LMIC stethoscope. Part of our goal is to disseminate this research through medical schools internationally, and we have started doing this in London, Ontario (Canada) and will likely help medical schools in the rest of Canada create their own versions. Other similar projects exist in Austria and France by other Open Source Hardware groups who wish to create and distribute stethoscopes there.
+
+We believe this piece would be very different if it discussed our political or philosophical foundations. We also believe that these foundations may distract readers from the technical review of a medical device. Other than acknowledge them in the subtext of the paper (open source implies a philosophy; as does 3D printing rather than mass manufacturing), we truly wish our technical work to be taken on its engineering merits by our reviewers and by your readers if you allow us the privilege of publishing with you.
+
+
+9. Briefly discuss other 3d printable stethoscopes available on the web. See http://www.yeggi.com/q/stethoscope/ Differentiate this work from those designs.
+We agree that it is important to recognize that there are other 3D printed stethoscopes online and have added a line to our introduction that recognizes that other versions exist.
+
+To our knowledge, none of these versions have been validated or even used clinically, and as such we have not discussed them beyond the acknowledgement.
+
+
+10. On the same note - I highly recommend that you upload the Glia to a design repository like Youmagine that enables a) a wider audience to find it and b) download tracking so you can start to track the downloaded substitution value, which is begining to be covered in the literature as a way to quantify the impact of libre hardware (e.g. in this case ~$150 saved per download depending on the cost of the commercial stethoscope (see point 7))
+
+Thank you for this suggestion. We have had many internal discussions about when we should widely publish our design. Our conclusion was to wait until we have been properly reviewed by our scientific peers and had our publication ready before we widely disseminate the design. We are happy to discuss dissemination timing with the PLoS editors to coincide publication on the various large distribution sites with publication of the article.
+
+Once this paper is reviewed and published, we feel that we could safely and honestly disseminate the source files widely without our anxiety of releasing unreviewed work. Until then, we feel it is prudent to add a small barrier of entry by making the design only available on github, which requires some mild technical proficiency.
+
+
+11. Fig 2a, 2b are not readable to me - please expand the size of the font, add in a high rez figure. Ensure that the figure can be read by colorblind readers.
+
+Thank you for your feedback on this figure. We have significantly simplified the presentation of these data (as discussed above).
+
+
+12. Discuss the potential for using flexible filament instead of the silicone molds (or simply printing in silicone)
+
+This point has become largely deprecated since submitting our paper, as we no longer use the silicone mold in production due to the difficulties and time involved in the process. Instead, we now use generic earbuds from commodity earbud-style headphones. We have updated the Methods section and Figure 1 to reflect these changes.
+
+
+Reviewer #2: 
+This paper describes the method used to produce 3D printed 3DP) parts required to assemble a stethoscope. Assembled 3DP stethoscopes (Glia) were compared with the Littmann Cardiology III in terms of signal amplitude in the range of 20 to 5k Hz. Figures display renders of the parts, a photograph of the Gila, and the traces of Gila vs. Littmann.
+
+Firstly, the figures are not sufficient to support the claims made by the authors. Figure 1 has no scale bars, are of poor quality, lack of detail in the caption, and are unclear as to which parts are 3DP and which are bought/cast. Figure 1B in particular is misleading, and should most likely be put into ESI. I would like to see two figures: one demonstrating the measurements, of each part, with a photo of said printed part, and additionally where they are clearly labelled in a high-quality photograph of the Gila.
+
+Figure 2 is unreadable and completely unacceptable; this data had to be sourced from the github.com to be legible. Further to this, it is puzzling to the reader as to why the scale bar for the frequency is not in logarithmic scale, as human hearing follows a log trend. In addition, the magnitude (which should be labelled Power) starts at -55, and goes to -25 dB. Why does it not start at 0 and have +ve and –ve axis? As typically seen in the literature? Is the 3DP Gila better for cardiology (40-100 Hz)? Respiratory (40-2000 Hz)? Both? In terms of references, of which a number are missing, which are even referenced on the Gila website, including Wodicka et al. 1997, Pesonen et al. 2005. I suggest a much more thorough literature review to support this work.
+
+My final thoughts on the paper are this. I was genuinely looking forward to this paper, and have been disappointed. While a great deal of wo has gone into developing a low-cost 3DP stethoscope for the Gaza strip,
+I do not see that reflected in this paper. There is an over focusing on the low-cost aspect, boarding on sensationalism, and not enough on why it stands as practical medical device in its own right. Further detail and discussion of the technical merits of the device are needed, and careful interpretation of the results.
+
+As the paper stands, there are also a number of inconsistencies, lack of engineering detail, and sweeping statements which I shall detail below:
+
+Page 2 - Abstract
+L2 – Powerful (sweeping statement, revise)
+L4 – widely regarded (sweeping statement, revise, and reference)
+L6 – high cost (disposable stethoscopes, and nurse single head stethoscopes are available for $5 USD or lower)
+The abstract has been revised to reflect these changes.
+
+Page 3
+L2 – introduced in 1819, by who? (Reference?)
+L3 – Powerful (sweeping statement, revise)
+L4 – Radical innovations (sweeping statement, revise)
+L9 – There is more than one major brand than the Littmann Cardiology? (more on this later)
+L10 - Widely regarded? By a website?
+(http://www.forusdocs.com/reviews/Acoustic_Stethoscope_Review.htm)
+L22- Aim of the project? (not research?)
+
+
+Page 3 has been revised to reflect these changes. 
+
+Re: Line 10. According to many sources, neither 3M nor Welch Allyn publish sales figures for their stethoscopes, making it difficult to show that the Littmann is the most widely used device. This is reflected in the 3M annual report, which does not cite the Littmann brand (http://s2.q4cdn.com/974527301/files/doc_downloads/2017/Annual/2016_3M_Annual_Report.pdf). The statement that the Cardiology III is widely regarded as a gold standard likely came from its ubiquitous use in Canadian hospitals (based on our experience). However, this doesn’t hold weight in an academic paper and we have therefore removed this statement.
+
+
+Page 4
+L3-4 We also attempt to make our validation methods accessible and low cost (why? Why not make this paper the definitive proof that low-cost 3DP stethoscopes are equal if not better than commercial ones?)
+
+This is an excellent point. There are two major reasons why we want our validation method to be low cost and accessible.
+
+Firstly, there is no gold standard method to quantitatively test the functionality of a stethoscope, preventing us from relying too heavily on quantitative methods. Current methods include phantom-based testing, as used in this manuscript, and air coupling. Other groups have attempted to measure responses using uniform air flow on real human subjects (Wodicka, 1997). The phantom based method in particular is an attempt to simulate a chest wall, but is undoubtedly a very different from a real chest wall.
+
+The second reason is that we want producers (e.g., ministries of health and hospitals) and users to be able to test our design for themselves as part of the quality assurance process to ensure they have manufactured the device properly. As such, the testing method must also be accessible. If users are to have confidence in our design, we believe that they ought to be able to have the same access to testing devices that we have.
+
+
+L10 – CrystalSCAD (address, country)
+L11 – OpenSCAD (address, country)
+
+Because of the nature of these programs, we have included their web rather than street addresses as well as the country in which the lead maintainer currently resides.
+
+
+L3 - commodity 3D printer (which one? Resolution, nozzle width, temperatures, support? More detail needed)
+
+Thank you for pointing this out. This information has been added.
+
+
+L4 – Why 15% or 100%? Please explain. Silicone tubing was sourced from where?
+
+We tried different infills expecting that a 100% infill would yield the best results (higher density would likely result in less sound loss). This was part of the iterative nature of the project and of 3D prototyping in general. We have redone Figure 2 to remove the 15% infill data as it is not the currently used model. The silicone tubing was sourced from http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp. This and other sourcing information is listed in the Github under the bill of materials.
+
+
+L12 – printed ring? Made of what?
+
+The printed ring is also made of ABS. This has been added to the manuscript. See below for additional information on the printed diaphragm ring.
+
+
+L14 – Spring properties? Which material? Is it a design aspect or materials?
+
+The spring is made of ABS and has spring properties by design. We have also printed these in PLA and they seem to work fine as well. ABS seems to be more flexible than PLA and therefore a better choice. We chose not to include the spring or the diaphragm ring in the manuscript as they were not used during the testing protocol. They are pictured in figure 1C and 1D (new figure)
+
+
+L15 – Silicone? What kind? What is the process?
+
+Due to the difficulties with this process, this part of the production has been deprecated in favour of using commodity earbuds from earbud-style headphones. For the sake of completeness, we have added a more comprehensive explanation of the silicone process as well as the exact product.
+
+
+Page 6
+L1 – Phantom-based frequency response setup, needs more detail, I believe the reference from 1966 is not sufficient. What about Wodicka et al. 1997 and their work?
+
+We have expanded upon the description of the phantom procedure. We also included a reference to the Wodicka paper but their findings used contact sensors over various parts of the chest wall to generate a spectral data set for respiratory sounds and not a stethoscope. These methods therefore do not overlap and it would be difficult to know how much a stethoscope attenuated breath sounds without knowing the original power in dB of the lung sound. 
+
+
+L10 – Many iterations? (What were the significant changes that were needed to arrive at the working version?)
+
+Almost every part of the stethoscope has gone through many iterations, although not all of them were tested quantitatively. Some specific examples include the shape of the head (especially following the introduction of the printed ring), the bore of the printed parts, infill percentage, shape of the Y piece, outer diameter and shape of the ear tube to accommodate the new spring etc. Each change was tested by Dr. Loubani in clinics in London, Ontario and many were tested by the team in Gaza. 
+
+
+L14 – Why three designs? Why only compare to the Littmann? How does it compare to disposable or single head stethoscopes?
+
+We tried three designs to see if infill percentage or bore diameter made a significant difference. As discussed above, the inclusion of this data complicated the figure unnecessarily as the 100% infill, 6mm channel iteration became the Glia stethoscope used today. We have decided it makes the most sense to only present this data.
+We compared to the Littmann as this seems to be the most ubiquitously used stethoscope in clinics, at least in Canada. As mentioned above, it is difficult to know if the Cardiology III is the most widely used stethoscope since these data aren’t published, but in our experience it is the most widely used at London Health Sciences Centre (London, Ontario), Jewish General Hospital (Montreal, Quebec), Kingston General Hospital (Kingston, Ontario), and perhaps others.
+
+Although it would be interesting to compare the Glia model to other disposable or single head stethoscopes, we believe that if the Glia is shown to be comparable to the brand name Cardiology III, it should be comparable to others. The purpose of comparison is to show users that our stethoscope is a vastly less expensive alternative to a good product if not the best product on the market. 
+
+
+L16 – Performed similarly? Can you explain the differences in the plots? It looks like the Littmann performs better at high-frequencies 4 to 5 kHz and at 3 kHz; which is better suited to respiratory sounds. The 15% infill seems to be better suited to 2.5 kHz range as well. Why does the Littmann underperform so significantly in the 20-100 Hz range? How does this compare to the study by Kindig et al. and Abella et al.
+
+This is a very interesting question and one that would require further study by ourselves as well as Littmann to delineate. Firstly, while we agree that the Glia performs better at some frequencies and the Littmann at other frequencies, these differences are quite small, usually within 2-4 decibels. Neither the Kindig et al. nor the Abella et al. articles looked at high frequency tones, leaving few clues as to why this might be. However, Abella et al did show that the diaphragm of the stethoscope was not suited for low frequency heart sounds, attenuating the sound at all frequencies, which is in congruence with our data. 
+
+This may be why many stethoscopes like the Littmann Cardiology III have a bell designated for these low frequency sounds and indeed the Abella paper showed that the bell accentuated low frequency sounds. Perhaps these questions could be answered in further studies.
+
+
+Page 7
+L9 – Gold standard (repetition)
+L13 to L18 – Repetition
+
+Page 8
+L1 to L7 – Fine, but more discussion as to how the Gila made use of this information in the design is needed.
+
+We have added some information regarding some of the iterations we went through, highlighting some particular challenges. 
+
+
+L1 – Is it possible that the orientation of the model would affect the acoustic properties due to the alignment of the fibres affecting the surface roughness? Has this been tested?
+
+This is an interesting question and one which we have not looked at. While we did not consider this while doing quantitative testing, we have not experienced any noticeable issues while using the stethoscopes in either the London, Ontario emergency room, nor the Gaza clinic. As well, practical considerations in 3D printing make it difficult if not impossible to print items in any orientations other than those presented.
+
+
+L13 to L15 – Repetition
+L18 – Class I medical device? Certified or is this speculative? (Is there a reference for this?)
+
+The Glia stethoscope is made under a Medical Device Establishment License (MDEL) issued by Health Canada to Glia Inc, a holder corporation that exists only to hold the MDEL. This can be verified here:
+
+https://health-products.canada.ca/mdel-leim/dispatch-mdel-repartition-lepim.do
+
+License number: 6823
+Corporation ID: 141507
+
+
+L22 and L23 – Are contradictory, please clarify; are the Gila being gradually introduced or self-sufficient in the Gaza strip? Do they make their own filament, silicone, and tubing as well?
+
+Our apologies for the wording, the stethoscope was gradually integrated but the group there are now self-sufficient producers. 
+
+
+Page 9
+L2 – I do not understand why we are discussing pulse oximeters and ECG machines. Conclusion in general needs significant reworking.
+
+The pulse oximeter and ECG are works in progress of our group that are/will also be trialed and made openly available. These projects are also listed on our GitHub page which we referenced in the manuscript and all progress can be found there. While they do not have direct relevance to the Stethoscope, they do have relevance to the development process and use of Free/Libre Open Source hardware and software for the manufacture of medical devices intended to be released as such.
