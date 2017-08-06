@@ -15,17 +15,18 @@ Bill of Materials
 **Printed parts:**
 * 1 stethoscope head (head.stl)
 * 2 ear tubes (eartube.stl)
-* 1 earplug mold (earplug_mold.stl)
+* 1 Y-piece (y_piece.stl)
+* 1 Spring (spring.stl)
 
 **Other hardware:**
 Some vendors are suggested. See Bill of materials ODS file for more information.
-* 40cm Silicone 12mm OD, 8mm ID
- * [8MM I.D X 12MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp) (USD$6.95)
+* 40cm - 50cm Silicone 12mm or 13mm OD, 8mm ID
+ * [8MM I.D X 12MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp) (USD$6.95/meter)
+ * [8MM I.D X 13MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](https://www.advancedfluidsolutions.co.uk/8mm-id-x-13mm-od-clear-transulcent-silicone-hose-pipe-tubing-2482-p.asp) (USD$7.34/meter)
 
-* 20cm Silicone 6mm OD, 4mm ID
-
-* Silicone for ear plugs
- * [Moldable Silicone Ear Plugs](http://www.earplugstore.com/moldable-silicone-ear-plugs.html) (USD$1.80)
+* 20cm Silicone 6mm or 8mm OD, 4mm ID (cut into 10cm pieces)
+ * [4mm ID x 6mm OD] (https://www.advancedfluidsolutions.co.uk/4mm-id-x-6mm-od-clear-transulcent-silicone-hose-pipe-tubing-2450-p.asp)
+ * [4mm ID x 8mm OD] (https://www.advancedfluidsolutions.co.uk/4mm-id-x-8mm-od-clear-transulcent-silicone-hose-pipe-tubing-2454-p.asp)
 
 * Diaphragm: 40mm diameter cut from a report cover with approx 0.35mm plastic sheet
  * [Staples 21639 report cover (UPC 718103160223)](http://www.staples.ca/en/Staples-Swing-Lock-Report-Cover-Clear-with-Black-Spine-5-Pack/product_780953_2-CA_1_20001) (USD$8.84)
