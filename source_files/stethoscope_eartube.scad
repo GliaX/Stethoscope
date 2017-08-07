@@ -20,7 +20,7 @@ yarray=[0,0,0,0.85,7.29,14.11,29.85,30.29,32.11,32.6,33.41,34.83,36.42,37.46,38.
 
 
 
-translate([33.5,-.5,3.5])cube([3,1,1]);// end key
+
 difference(){
     union(){
    difference(){
@@ -34,17 +34,17 @@ for(i=[3:1:34]){//building the shape of the outer shell of the ear tube till the
     
         }}
         
-            translate([0,0,.2])hull(){
+            hull(){
     translate([xarray[1],yarray[1],0])//cylinder(r=.5,h=10);
-        scale([1,1.2,1])sphere(3.5,$fn=20);
+        scale([1,1.2,1])sphere(3.5,$fn=10);
     translate([xarray[2],yarray[2],0])//cylinder(r=.5,h=10);
-        scale([1,1.2,1])sphere(3.7,$fn=20);
+        scale([1,1.2,1])sphere(3.5,$fn=10);
     
         }
         
             hull(){
-    translate([xarray[2],yarray[2],0.2])//cylinder(r=.5,h=10);
-        scale([1,1.2,1])sphere(3.7,$fn=20);
+    translate([xarray[2],yarray[2],0])//cylinder(r=.5,h=10);
+        scale([1,1.2,1])sphere(3.5,$fn=10);
     translate([xarray[4],yarray[4],0])//cylinder(r=.5,h=10);
         sphere(3.5,$fn=10);
     
@@ -86,7 +86,7 @@ translate([xxa[2],yya[2],0])rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cyl
        
         }
         union(){
-      translate([-12.5,-5,-5])cube([10,10,10]);  
+      translate([-10,-5,-5])cube([10,10,10]);  
 for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud area
     hull(){
     translate([xarray[i],yarray[i],0])//cylinder(r=.5,h=10);
@@ -129,4 +129,3 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
         
         }}
                 // translate([xxa[2]+1,yya[2]-4,-3.4])rotate([0,0,60])cube([5,5,.4]);//earbud support
-        

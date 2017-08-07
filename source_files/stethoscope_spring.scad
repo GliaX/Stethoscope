@@ -1,10 +1,3 @@
-/*
-print with 4 layers of vertical shells
-
-
-*/
-
-
 ro=20;
 
 // Create the first leaf (outside) of the spring
@@ -34,14 +27,11 @@ module hole($rotate){
             translate([-radius,-radius,0]) cube([2,10,20]);
             cylinder(r=radius,h=12);
         }
-        translate([1,0,0]) rotate([0,0,$rotate]) union(){hull(){
+        translate([1,0,0]) rotate([0,0,$rotate]) hull(){
         translate([0,0,-10])scale([1.2,1,1])sphere(3.7
             ,$fn=10);//ear tube diameter
     translate([0,0,30])scale([1.2,1,1])sphere(3.7,$fn=10);
        }//ear tube diameter
-       
-       translate([-.6,3.5,0])cube([1.2,1.2,3]);//key pitch
-   }
     }
  }
 
