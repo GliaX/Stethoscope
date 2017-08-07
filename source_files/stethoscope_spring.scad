@@ -40,7 +40,7 @@ module hole($rotate){
     translate([0,0,30])scale([1.2,1,1])sphere(3.7,$fn=10);
        }//ear tube diameter
        
-       translate([-.6,3.5,0])cube([1.2,1.2,3]);//key pitch
+       translate([-.6,-1.2-3.5,0])cube([1.2,1.2,3]);//key pitch
    }
     }
  }
