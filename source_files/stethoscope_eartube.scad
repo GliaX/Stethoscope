@@ -36,17 +36,17 @@ for(i=[3:1:34]){//building the shape of the outer shell of the ear tube till the
     
         }}
         
-            translate([0,0,.2])hull(){
+            translate([0,0,0])hull(){
     translate([xarray[1],yarray[1],0])//cylinder(r=.5,h=10);
         scale([1,1.2,1])sphere(3.5,$fn=20);
     translate([xarray[2],yarray[2],0])//cylinder(r=.5,h=10);
-        scale([1,1.2,1])sphere(3.7,$fn=20);
+        scale([1,1.2,1])sphere(3.5,$fn=20);
     
         }
         
             hull(){
-    translate([xarray[2],yarray[2],0.2])//cylinder(r=.5,h=10);
-        scale([1,1.2,1])sphere(3.7,$fn=20);
+    translate([xarray[2],yarray[2],0])//cylinder(r=.5,h=10);
+        scale([1,1.2,1])sphere(3.5,$fn=20);
     translate([xarray[4],yarray[4],0])//cylinder(r=.5,h=10);
         sphere(3.5,$fn=10);
     
@@ -59,10 +59,15 @@ for(i=[3:1:34]){//building the shape of the outer shell of the ear tube till the
 rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3.5,h=1.5);//earbud
         }
             }
+            
+            
+            
+            
         translate([xxa[2]-.1,yya[2],0])rotate([0,0,-30])rotate([0,90,0])cylinder(r=4,h=3.5);//earbud
             
       
     }
+    
         // ear plug
         // i took the last two points on the array and took a moddle point  turns out that the distance is 2mm which is enough 
         
@@ -131,16 +136,23 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
         
         }}
                 // translate([xxa[2]+1,yya[2]-4,-3.4])rotate([0,0,60])cube([5,5,.4]);//earbud support
-        
+   
+   
+   
+   
+   
+   
+   
+     
     }
     
-    font = "Kinnari:style=Italic";
+    font = "Kinnari:style=Bold";
 //font = "Purisa:style=Bold";
 //font = "Tlwg Mono:style=Bold";
 //font ="eufm10:style=Bold";
 cube_size = 60;
-letter_size = 3;
-letter_height = 8;
+letter_size = 5;
+letter_height = 1.3;
 
 o = cube_size / 2 - letter_height / 2;
 
@@ -151,15 +163,15 @@ module letter(tt) {
     text(tt, size = letter_size, font = font, halign = "center", valign = "center", $fn = 16);
   }
 }
-translate([0,20,0])difference(){
+translate([0,20,0])union(){
 eartube();
-    translate([165.4,71.23,3])rotate([0,0,45])letter("R");
+    translate([163.2,74.66,2.5])rotate([0,0,45])letter("R");
 }
 
 
-translate([0,-20,0])difference(){
+translate([0,-20,0])union(){
 mirror([0,1,0])eartube();
-    translate([165.4,-71.23,3])rotate([0,0,-25])letter("L");
+    translate([163.1,-74.8,2.5])rotate([0,0,120])letter("L");
 }
 
 
