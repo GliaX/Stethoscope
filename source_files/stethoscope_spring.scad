@@ -32,7 +32,7 @@ module hole($rotate){
     difference() {
         hull(){
             translate([-radius,-radius,0]) cube([2,10,20]);
-            cylinder(r=radius,h=12);
+            translate([1,.2,0])scale([1.2,1.05,1])cylinder(r=radius,h=12);
         }
         translate([1,0,0]) rotate([0,0,$rotate]) union(){hull(){
         translate([0,0,-10])scale([1.2,1,1])sphere(3.7
@@ -64,8 +64,8 @@ module hole($rotate){
 }
 
     // Connectors
-    translate([ro+5,30,7]) rotate([90,0,0]) hole(15);
-    translate([-ro-5,30,7]) mirror([1,0,0]) rotate([90,0,0]) hole(15);
+    translate([ro+5,30,7]) rotate([90,0,0]) hole(20);
+    translate([-ro-5,30,7]) mirror([1,0,0]) rotate([90,0,0]) hole(20);
     
     //Connect connectors to springs
     translate([ro-2,0,0])cube([3,20,10]);
