@@ -44,7 +44,8 @@ Print Instructions
 All printed parts should be printed with ABS or PLA plastic at 0.2mm layer height, 
 though it is acceptable for the first layer to be 0.3mm.
 
-We print the eartubes with a brim of 2mm to ensure that none of the parts lift off.
+We print the eartubes and Y-pieces with a brim of 2mm to ensure that none of the 
+parts lift off.
 
 **INFILL MUST BE 100%.** Otherwise, the stethoscope will not print well.
 
