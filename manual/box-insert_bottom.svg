@@ -15,9 +15,9 @@
    viewBox="0 0 797.24409 389.76378"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="box-insert_bottom.svg"
-   inkscape:export-filename="/home/orangey/workspace/Stethoscope/manual/box-insert_english.png"
+   inkscape:export-filename="/home/orangey/workspace/Stethoscope/manual/box-insert_bottom.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <title
@@ -168,9 +168,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1652642"
-     inkscape:cx="214.11454"
-     inkscape:cy="195.31896"
+     inkscape:zoom="0.82396622"
+     inkscape:cx="281.85238"
+     inkscape:cy="134.84772"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -190,11 +190,13 @@
     <sodipodi:guide
        position="398.50001,-20.249999"
        orientation="1,0"
-       id="guide7370" />
+       id="guide7370"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="426.20862,13.788582"
        orientation="0,1"
-       id="guide9456" />
+       id="guide9456"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -206,7 +208,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title>Assembly instructions for Glia Stethoscope</dc:title>
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
         <dc:creator>
           <cc:Agent>
             <dc:title />
@@ -321,16 +323,15 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="25"
        y="710.36218"
-       id="text4559"
-       sodipodi:linespacing="125%"><tspan
+       id="text4559"><tspan
          sodipodi:role="line"
          id="tspan4561"
          x="25"
          y="710.36218"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Stethoscope</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Stethoscope</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
        d="m 577.35269,882.15049 -84.85281,0"
@@ -343,69 +344,66 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="620"
        y="713.0246"
-       id="text6914"
-       sodipodi:linespacing="125%"><tspan
+       id="text6914"><tspan
          sodipodi:role="line"
          id="tspan6916"
          x="620"
          y="713.0246"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">سماعة طبية</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial">سماعة طبية</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="17"
        y="743.36218"
-       id="text6984"
-       sodipodi:linespacing="125%"><tspan
+       id="text6984"><tspan
          sodipodi:role="line"
          id="tspan6986"
          x="17"
          y="743.36218"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">1. Snap pieces together as shown</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">1. Snap pieces together as shown</tspan><tspan
          sodipodi:role="line"
          x="17"
          y="765.23718"
          id="tspan6988"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">2. Connect large tube to head and Y-piece</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">2. Connect large tube to head and Y-piece</tspan><tspan
          sodipodi:role="line"
          x="17"
          y="787.11218"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan7372">3. Connect small tubes to Y-piece and ear tubes</tspan><tspan
          sodipodi:role="line"
          x="17"
          y="808.98718"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan7418">4. Attach earbuds to ear tubes</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="770.38013"
        y="743.36218"
-       id="text6984-2"
-       sodipodi:linespacing="125%"><tspan
+       id="text6984-2"><tspan
          sodipodi:role="line"
          x="770.38013"
          y="743.36218"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan7414">جمع القطع مع بعضها كما هو موضح بالرسم</tspan><tspan
          sodipodi:role="line"
          x="770.38013"
          y="766.79968"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
-         id="tspan9813">ركب الأنبوب الكبير ما بين القطعة Y و قطعة السماعة</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         id="tspan9813">ركب الأنبوب الكبير ما بين القطعة    و قطعة السماعة</tspan><tspan
          sodipodi:role="line"
-         x="770.38013"
+         x="775.58032"
          y="790.23718"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
-         id="tspan9823">ركب الأنابيب الصغيرة لتصل ما بين القطعة Y و أنابيب الأذن </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         id="tspan9823">ركب الأنابيب الصغيرة لتصل ما بين القطعة    و أنابيب الأذن </tspan><tspan
          sodipodi:role="line"
-         x="770.38013"
+         x="775.58032"
          y="813.67468"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan9817">تركيب وسادات الأذن مع أنابيب الأذن </tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -426,30 +424,29 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="789.01727"
        y="741.96143"
-       id="text6984-2-3"
-       sodipodi:linespacing="125%"><tspan
+       id="text6984-2-3"><tspan
          sodipodi:role="line"
          x="789.01727"
          y="741.96143"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan9817-1">.1</tspan><tspan
          sodipodi:role="line"
          x="789.01727"
          y="765.39893"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan9863">.2</tspan><tspan
          sodipodi:role="line"
          x="789.01727"
          y="788.83643"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan9865">.3</tspan><tspan
          sodipodi:role="line"
          x="789.01727"
          y="812.27393"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan9867">.4</tspan></text>
     <g
        id="g10007"
@@ -509,18 +506,17 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:11.83843422px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#3ba933;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#3ba933;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="361.46936"
            y="1020.4346"
            id="text9471"
-           sodipodi:linespacing="125%"
            inkscape:export-xdpi="200"
            inkscape:export-ydpi="200"><tspan
              sodipodi:role="line"
              id="tspan9473"
              x="361.46936"
              y="1020.4346"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#3ba933;fill-opacity:1">مؤسسة</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.83843422px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#3ba933;fill-opacity:1">مؤسسة</tspan></text>
       </g>
       <g
          transform="translate(-8.4852813,9.5459416)"
@@ -677,18 +673,39 @@
            inkscape:export-ydpi="90" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:20.57816887px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#032f39;fill-opacity:0.6;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#032f39;fill-opacity:0.6;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="452.5173"
            y="1068.7479"
            id="text9549"
-           sodipodi:linespacing="125%"
            transform="scale(1.0289085,0.97190373)"><tspan
              sodipodi:role="line"
              id="tspan9551"
              x="452.5173"
              y="1068.7479"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#032f39;fill-opacity:0.6">صحة الجميع</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.57816887px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#032f39;fill-opacity:0.6">صحة الجميع</tspan></text>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.890625px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93750006px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="496.89154"
+       y="787.98907"
+       id="text751"><tspan
+         sodipodi:role="line"
+         id="tspan749"
+         x="496.89154"
+         y="787.98907"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.93750006px">Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.89062405px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="552.40173"
+       y="764.09381"
+       id="text751-3"><tspan
+         sodipodi:role="line"
+         id="tspan749-3"
+         x="552.40173"
+         y="764.09381"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.9375px">Y</tspan></text>
   </g>
 </svg>
