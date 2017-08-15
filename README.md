@@ -80,7 +80,9 @@ The SCAD files output from CrystalSCAD are found in `source_files/stethoscope_he
 * PrintableStethoscopeHead1Assembly_output.scad - The head
 * EarplugMold_output.scad - Earplug mold
 
+
 Other stethoscopes
 ==================
 Others have made 3D printed stethoscopes too. See:
 * https://www.youmagine.com/designs/stethoscope-chestpiece
+
