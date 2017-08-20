@@ -72,12 +72,18 @@ sphere(3,$fn=10);
 rotate([0,0,-30])rotate([0,90,0])cylinder(r=1,h=1);
      }*/
      
-         
+    
+
+    
      translate([xxa[1],yya[1],0])
 rotate([0,0,-30])rotate([0,90,0])cylinder(r=1,h=1);
+    
          translate([xxa[2],yya[2],0])
 rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3.5,h=1.5);//earbud
              
+    
+    
+    
 translate([xxa[2],yya[2],0])rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=2,h=3.5);
      
      
@@ -86,7 +92,7 @@ translate([xxa[2],yya[2],0])rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cyl
        
         }
         union(){
-      translate([-10,-5,-5])cube([10,10,10]);  
+      translate([-12.5,-5,-5])cube([10,10,10]);  
 for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud area
     hull(){
     translate([xarray[i],yarray[i],0])//cylinder(r=.5,h=10);
@@ -129,3 +135,27 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
         
         }}
                 // translate([xxa[2]+1,yya[2]-4,-3.4])rotate([0,0,60])cube([5,5,.4]);//earbud support
+        
+        
+        
+        
+        
+        
+        //eartubes bottom mouse ear
+        translate([0,0,-3.33])difference(){
+        cylinder(r=5,h=1);
+        translate([0,-6,0])cube([12,12,1]);
+        }    
+        
+        
+//eartube earbud mouse ear
+ translate([xxa[2],yya[2],0])
+rotate([0,0,-30])translate([0,0,-3.33])difference(){
+        cylinder(r=5,h=1);
+        translate([0,-6,0])cube([12,12,1]);
+        }    
+
+
+/*     translate([xxa[2],yya[2],0])
+rotate([0,0,-30])rotate([0,90,0])rotate([0,0,18])cylinder(r=3.5,h=1.5);//earbud
+    

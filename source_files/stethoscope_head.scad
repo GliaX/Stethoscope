@@ -81,3 +81,10 @@ difference() {
     original_head();
     ring();
 }
+
+
+
+translate([0,-40.2,.05])difference(){
+    cylinder(r=5,h=1);
+    translate([-6,0,0])cube([12,12,1]);
+}
