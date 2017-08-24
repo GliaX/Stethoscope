@@ -20,21 +20,26 @@ module innerSpring() {
 
 
 // Create connector and hole for eartube.
+
 module hole($rotate){
     radius = 7;
     difference() {
         hull(){
             translate([-radius,-radius,0]) cube([2,10,20]);
+            //translate([1,.2,0])scale([1.2,1.05,1])//thicker wall
             cylinder(r=radius,h=12);
         }
-        translate([1,0,0]) rotate([0,0,$rotate]) hull(){
-        translate([0,0,-10])scale([1.2,1,1])sphere(3.7
-            ,$fn=10);//ear tube diameter
+        translate([1,0,0]) rotate([0,0,$rotate]) union(){hull(){
+        translate([0,0,-10])scale([1.2,1,1])sphere(3.7,$fn=10);//ear tube diameter
     translate([0,0,30])scale([1.2,1,1])sphere(3.7,$fn=10);
        }//ear tube diameter
+       
+      // translate([-.6,-1.2-3.5,0])cube([1.2,1.2,3]);//key pitch
+   }
     }
  }
-
+ 
+ 
 // Create the final piece
 
     difference(){
