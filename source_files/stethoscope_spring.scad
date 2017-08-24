@@ -26,7 +26,7 @@ module hole($rotate){
     difference() {
         hull(){
             translate([-radius,-radius,0]) cube([2,10,20]);
-            //translate([1,.2,0])scale([1.2,1.05,1])//thicker wall
+            translate([1,.2,0])scale([1.2,1.05,1])//thicker wall
             cylinder(r=radius,h=12);
         }
         translate([1,0,0]) rotate([0,0,$rotate]) union(){hull(){
