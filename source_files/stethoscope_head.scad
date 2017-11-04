@@ -84,8 +84,8 @@ difference() {
 
 
 
-translate([-1,-40.2-5,.05])cube([2,5,.2]);
-translate([0,-40.2-5,.05])difference(){
+translate([-1,-40.2-2.5,.05])cube([2,5,.2]);
+translate([0,-40.2-1,.05])difference(){
     cylinder(r=5,h=.5);
     translate([-6,0,0])cube([12,12,1]);
 }

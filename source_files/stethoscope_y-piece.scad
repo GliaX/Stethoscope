@@ -52,3 +52,30 @@ difference(){
     shell();
     channel();
 }
+
+
+
+
+
+
+////////////////////////////////////////
+//mouse ear
+	//translate([35,0,-1.5])cylinder(r=2,h=10);
+for(i=[-20,20])rotate([0,0,i]){
+translate([35,-1,-4.5])cube([5,2,.2]);
+translate([35+2,0,-4.5])difference(){
+    cylinder(r=5,h=.5);
+    translate([-12,-6,0])cube([12,12,1]);
+}
+
+}
+
+
+
+
+translate([-35-4,-1,-4.4])cube([5,2,.2]);
+translate([-35-.5,0,-4.4])difference(){
+    cylinder(r=5,h=.5);
+    translate([0,-6,0])cube([12,12,1]);
+}
+
