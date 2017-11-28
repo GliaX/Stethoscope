@@ -141,7 +141,7 @@ for(i=[0:1:34]){//building the hole of the tube from the [0,0] until the earbud 
         
 //eartube earbud mouse ear
  translate([xxa[2],yya[2],0])
-rotate([0,0,-30])translate([0,0,-3.33]){translate([-0,0,0])difference(){
+rotate([0,0,-30])translate([0,0,-3.33]){translate([-2.5,0,0])difference(){
         cylinder(r=5,h=.5);
         translate([0,-6,0])cube([12,12,1]);
         }    
