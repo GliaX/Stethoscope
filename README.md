@@ -65,6 +65,18 @@ Assembly Instructions
 * Attach the ear tubes to the molded earplugs.
 * Test the stethoscope as per the validation instructions.
 
+Printing the inserts
+====================
+The inserts are included in the `manual` directory. Using 8.5 x 11 (Legal) paper,
+they can be printed at 8.25" page width with 95% scale for the top print and 
+90% scale for the bottom print using GIMP.
+
+The top insert is cut at 14.5cm and again at 1cm creating two labels of 13.5cm height.
+These inserts are printed on adhesive material.
+
+The bottom insert is cut at a width of 20cm with a height cuts at 25cm, 15cm, 
+13.5cm and 3.5cm creating 10cm x 20cm inserts.
+
 
 Changing and creating SCAD files
 ================================
