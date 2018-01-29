@@ -1,21 +1,30 @@
 ﻿Response to reviewers
 
 Reviewer #1: I commend the authors for fixing many of the issues raised in the last review. This will make a solid contribution to the literature after several areas for improvement have been finalized.
+
+
 1. Do not discuss the design historically - if the molds are no longer used - there should be not mention of them in the methods...only what is used and tested here.
+
 Thank you for the suggestion. We have removed information about historical aspects of the design. 
 
-2. The literature review for this work is still inadequate. Saying things like there are other designs online and not citing them is just lazy - why is yours better?... but far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world. Citing work you are building upon does not have anything to do with "our political or
-philosophical foundations." No one cares about that -- we are talking about the practical realities of low resource settings and why your work would be so important. This also goes to some of the concern of your concentration on cost for the other reviewer. In addition, there are a ton of facts not cited..e.g. "We assumed the price of 10 lbs (4.54 kg) of ABS
-107 pellets to be 31 USD." If that is how much it costs provide a supplier/url for the price....every fact that is not yours should be cited. If you dont have firm numbers put in ranges.
 
-We have divided these concerns and will attempt to address them individually:
+2. The literature review for this work is still inadequate. Saying things like there are other designs online and not citing them is just lazy - why is yours better?... but far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world. Citing work you are building upon does not have anything to do with "our political or
+philosophical foundations." No one cares about that -- we are talking about the practical realities of low resource settings and why your work would be so important. This also goes to some of the concern of your concentration on cost for the other reviewer. In addition, there are a ton of facts not cited..e.g. "We assumed the price of 10 lbs (4.54 kg) of ABS107 pellets to be 31 USD." If that is how much it costs provide a supplier/url for the price....every fact that is not yours should be cited. If you dont have firm numbers put in ranges.
+
+
+We have divided these concerns and will address them individually:
+
 a. Saying things like there are other designs online and not citing them is just lazy
+
 Thank you for raising this. We have revised this section to be as exhaustive as possible about the other projects we have found online.
 
+
 b. why is yours better?
+
 The implication of our work is that it contributes to the body of knowledge through the added rigour of experimentation and peer review. We have added this explicitly as the contribution we believe we are making to the stethoscope.
 
-c.. But far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world… [W]e are talking about the practical realities of low resource settings and why your work would be so important.
+
+c. But far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world… [W]e are talking about the practical realities of low resource settings and why your work would be so important.
 
 We have discussed this point extensively within our team and still respectfully disagree with the reviewer this point, but propose a solution beneath our rationale.
 We believe the low and middle income country (LMIC) context is important and a significant aspect of our work. We agree that some of the literature on the use of these technologies in LMICs might give purpose or increase the value of our work for some readers.
@@ -25,9 +34,12 @@ We believe that even absent poverty in the world this work is significant, as it
 
 It appears the reviewer feels adamantly about this point and that it might become a blocking issue for the progress of this paper. As such, we have included a section on the use of these technologies under mild protest. If the reviewer is persuaded by our arguments, or if our argument is persuasive but incomplete, we can revisit these revisions.
 
+
 d. In addition, there are a ton of facts not cited..e.g. "We assumed the price of 10 lbs (4.54 kg) of ABS
 107 pellets to be 31 USD." If that is how much it costs provide a supplier/url for the price....every fact that is not yours should be cited. If you dont have firm numbers put in ranges.
 Thank you for highlighting this. We have combed the paper for any unreferenced facts and believe we have cited them all. As the reviewer may realize, the authors are easily blinded by constantly looking at this work, and hopefully any remaining omissions can be raised for us to address.
+
+
 3. For Table 1 - what happened to the waste plastic? You can estimate costs from the energy values from recyclebot waste plastic studies on ABS like this one http://www.sciencedirect.com/science/article/pii/S0921344917303014 and the cost of electricity in your target region.
 
 As each stethoscope uses approximately 47g of plastic, the energy costs involved in extruding filament are negligible. Using the figures from the referenced article, the cost for our centre in Ontario, Canada (in USD) would be:
@@ -35,8 +47,11 @@ As each stethoscope uses approximately 47g of plastic, the energy costs involved
 At off-peak, this number drops to USD$0.00087. To contextualize this number, the  plastic required for 5 stethoscopes on-peak and over 10 off-peak would cost less than one cent to extrude from pellets.
 However, this comment encouraged us to examine the electricity cost involved in printing the entire stethoscope, which we calculate at approximately $0.04 per stethoscope. We have included this number in Table 1 to give a fuller picture of the costs.
 
+
 4. You did not adequately address the technical concerns of the other reviewer --see his/her first couple of comments. I would be more inclined to include the data he asks for - and just put it in another figure.
+
 We have added scale bars to the rendered figures. See comments below.
+
 
 5. You removed one of the most important lines about your results in the discussion- why do that?
 
@@ -47,20 +62,29 @@ Reviewer #2: Thank for you the work done on the manuscript. Almost all of the pr
 
 1. Figure 1
 a. Still no scale bars, or indication of sizes. I understand that the actual measurements are in the table, and the CAD files are available for download. How, I feel that some kind of reference point is needed for the reader. Coins, rulers etc all make for excellent reference points in a photograph.
+
 We have included a scale bar in the figures. As well, exact dimensions of the parts are included in Table 1. 
 
+
 b. The inclusion of (D) is actually more confusing, as the only difference is the ear buds. I think that just one of the images of the finished Gila is needed, or alternatively an inset image (crop) of the updated model with a close-up of the ear buds? Also from a design perspective I feel that one central image of the finished device with images of the CAD drawings (maybe with lines pointing them out in the finished model) would aid understanding of the figure.
+
 We have removed (D) and unified the figure as one central figure with the real-life stethoscope indicating the 3D-rendered parts.
+
 
 2. Figure 2
 a. Graph axis could do with minor ticks added
 b. As reviewer 1 mentioned, Figure 2a could benefit from monochrome, and/or different line style.
+
 Thank you for these suggestions, we have added both.
 These changes have been made. Thank you for the suggestion.
 
+
 3. Editing issue - check paper throughout to make sure there are spaces between value and units
+
 Fixed, thank you.
 
+
 4. Line 181 – random ‘X’ after 3DP cost
+
 Removed, thank you.
 
