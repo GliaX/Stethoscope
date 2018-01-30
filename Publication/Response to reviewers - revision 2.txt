@@ -8,8 +8,7 @@ Reviewer #1: I commend the authors for fixing many of the issues raised in the l
 Thank you for the suggestion. We have removed information about historical aspects of the design. 
 
 
-2. The literature review for this work is still inadequate. Saying things like there are other designs online and not citing them is just lazy - why is yours better?... but far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world. Citing work you are building upon does not have anything to do with "our political or
-philosophical foundations." No one cares about that -- we are talking about the practical realities of low resource settings and why your work would be so important. This also goes to some of the concern of your concentration on cost for the other reviewer. In addition, there are a ton of facts not cited..e.g. "We assumed the price of 10 lbs (4.54 kg) of ABS107 pellets to be 31 USD." If that is how much it costs provide a supplier/url for the price....every fact that is not yours should be cited. If you dont have firm numbers put in ranges.
+2. The literature review for this work is still inadequate. Saying things like there are other designs online and not citing them is just lazy - why is yours better?... but far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world. Citing work you are building upon does not have anything to do with "our political or philosophical foundations." No one cares about that -- we are talking about the practical realities of low resource settings and why your work would be so important. This also goes to some of the concern of your concentration on cost for the other reviewer. In addition, there are a ton of facts not cited..e.g. "We assumed the price of 10 lbs (4.54 kg) of ABS107 pellets to be 31 USD." If that is how much it costs provide a supplier/url for the price....every fact that is not yours should be cited. If you dont have firm numbers put in ranges.
 
 
 We have divided these concerns and will address them individually:
@@ -21,7 +20,7 @@ Thank you for raising this. We have revised this section to be as exhaustive as 
 
 b. why is yours better?
 
-The implication of our work is that it contributes to the body of knowledge through the added rigour of experimentation and peer review. We have added this explicitly as the contribution we believe we are making to the stethoscope. See line 65
+The implication of our work is that it contributes to the body of knowledge through the added rigour of experimentation and peer review. We have added this explicitly as the contribution we believe we are making to the stethoscope.
 
 
 c. But far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world… [W]e are talking about the practical realities of low resource settings and why your work would be so important.
@@ -61,7 +60,7 @@ Reviewer #2: Thank for you the work done on the manuscript. Almost all of the pr
 1. Figure 1
 a. Still no scale bars, or indication of sizes. I understand that the actual measurements are in the table, and the CAD files are available for download. How, I feel that some kind of reference point is needed for the reader. Coins, rulers etc all make for excellent reference points in a photograph.
 
-We have included a scale bar in the figures. As well, exact dimensions of the parts are included in Table 1. 
+We have included a scale bar in the figures. As well, exact dimensions of the parts are included in Table 1 as you previously noted. 
 
 
 b. The inclusion of (D) is actually more confusing, as the only difference is the ear buds. I think that just one of the images of the finished Gila is needed, or alternatively an inset image (crop) of the updated model with a close-up of the ear buds? Also from a design perspective I feel that one central image of the finished device with images of the CAD drawings (maybe with lines pointing them out in the finished model) would aid understanding of the figure.
