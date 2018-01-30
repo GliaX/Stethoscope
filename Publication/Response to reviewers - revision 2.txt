@@ -21,30 +21,28 @@ Thank you for raising this. We have revised this section to be as exhaustive as 
 
 b. why is yours better?
 
-The implication of our work is that it contributes to the body of knowledge through the added rigour of experimentation and peer review. We have added this explicitly as the contribution we believe we are making to the stethoscope.
+The implication of our work is that it contributes to the body of knowledge through the added rigour of experimentation and peer review. We have added this explicitly as the contribution we believe we are making to the stethoscope. See line 65
 
 
 c. But far worse is leaving out the bulk of the literature for 3d printed medical/scientific equipment and the use of 3DP in the developing world… [W]e are talking about the practical realities of low resource settings and why your work would be so important.
 
-We have discussed this point extensively within our team and still respectfully disagree with the reviewer this point, but propose a solution beneath our rationale.
-We believe the low and middle income country (LMIC) context is important and a significant aspect of our work. We agree that some of the literature on the use of these technologies in LMICs might give purpose or increase the value of our work for some readers.
-However, our contention is that different standards are implied when medical equipment design and quality is discussed in the context of LMICs. The natural inclination of most readers in rich countries is to believe that devices made for LMICs can – or indeed should – make sacrifices in quality to achieve their purposes. Implicit in presenting this stethoscope as targeting the third world is the idea that even if it is not quite as good, that's acceptable.
-We do not want this work to be judged by a double standard. To repeat a statement from our previous response, we want this stethoscope to be judged on its technical merits against first-class medical devices.
-We believe that even absent poverty in the world this work is significant, as it introduces two drastic cost-saving innovations: the use of plastic and 3d printing to create a product equal to metal alternatives and the dissemination of plans and bills of material through an open source license. In our view, the work's importance does not depend on its use in LMICs, and their very mention implicitly lowers the standard by which readers will judge our work.
-
-It appears the reviewer feels adamantly about this point and that it might become a blocking issue for the progress of this paper. As such, we have included a section on the use of these technologies under mild protest. If the reviewer is persuaded by our arguments, or if our argument is persuasive but incomplete, we can revisit these revisions.
+The reviewer's response has been helpful in understanding how the context and implication of our work should be clarified for some audiences. We have therefore added relevant sections to our introduction and discussion addressing some of the existing work and implications of it.
 
 
 d. In addition, there are a ton of facts not cited..e.g. "We assumed the price of 10 lbs (4.54 kg) of ABS
 107 pellets to be 31 USD." If that is how much it costs provide a supplier/url for the price....every fact that is not yours should be cited. If you dont have firm numbers put in ranges.
-Thank you for highlighting this. We have combed the paper for any unreferenced facts and believe we have cited them all. As the reviewer may realize, the authors are easily blinded by constantly looking at this work, and hopefully any remaining omissions can be raised for us to address.
+
+Thank you for highlighting this. We have combed the paper for any unreferenced facts and believe we have now referenced them all.
 
 
 3. For Table 1 - what happened to the waste plastic? You can estimate costs from the energy values from recyclebot waste plastic studies on ABS like this one http://www.sciencedirect.com/science/article/pii/S0921344917303014 and the cost of electricity in your target region.
 
 As each stethoscope uses approximately 47g of plastic, the energy costs involved in extruding filament are negligible. Using the figures from the referenced article, the cost for our centre in Ontario, Canada (in USD) would be:
-0.302KWh/kg of ABS * 0.047kg ABS per stethoscope * CDN$0.157/kWh on peak * 0.8 USD conversion = USD$0.0018 per stethoscope
-At off-peak, this number drops to USD$0.00087. To contextualize this number, the  plastic required for 5 stethoscopes on-peak and over 10 off-peak would cost less than one cent to extrude from pellets.
+
+0.302KWh/kg of ABS * 0.047kg ABS per stethoscope * CDN$0.132/kWh on peak * 0.8 USD conversion = USD$0.0015 per stethoscope
+
+At off-peak, this number drops to USD$0.0007. To contextualize this number, the plastic required for 5 stethoscopes on-peak and 14 off-peak would cost less than one cent to extrude from pellets. We have added a note that this cost is negligible in the text.
+
 However, this comment encouraged us to examine the electricity cost involved in printing the entire stethoscope, which we calculate at approximately $0.04 per stethoscope. We have included this number in Table 1 to give a fuller picture of the costs.
 
 
