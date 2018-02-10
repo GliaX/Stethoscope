@@ -1,0 +1,90 @@
+JOURNAL REQUIREMENTS:
+
+1. Please ensure that the author list and affiliations are correct on the title page of your manuscript, and that your author contributions, competing interests, and financial disclosure are correct as listed below. All of these sections will be indexed in PubMed and published by PLOS ONE as you have written them. Please email plosone@plos.org if any changes to this content need to be made.
+
+Alexander Pavlosky- Data curation
+Writing – original draft
+Writing – review & editing
+
+Jennifer Glauche-
+Investigation
+Methodology
+
+
+Spencer Chambers-
+Data curation
+Formal analysis
+Methodology
+
+
+Mahmoud Al-Alawi- Methodology
+Resources
+
+Kliment Yanev- Data curation
+Methodology
+
+Tarek Loubani- Conceptualization
+Data curation
+Formal analysis
+Funding acquisition
+Investigation
+Methodology
+Project administration
+Resources
+Supervision
+Validation
+Writing – original draft
+Writing – review & editing
+
+Please see here for the full list and definition of contributor roles: http://journals.plos.org/plosone/s/authorship#loc-author-contributions
+
+
+Competing Interests: The authors have declared that no competing interests exist. Dr. Tarek Loubani and Mahmoud Al-Alawi are affiliated with Glia Inc., a research corporation solely owned and controlled by Dr. Tarek Loubani. The corporation had no role in the study design, data collection and analysis or decision to publish. This affiliation does not alter our adherence to PLOS ONE policies on sharing data and materials. Glia Inc., Dr. Tarek Loubani and the authors have no actual, pending or potential patents and no intention to ever patent this or similar work on open medical devices.
+
+
+
+
+
+Financial Disclosure: The authors received no specific funding for this work. The project was self-funded by Dr. Tarek Loubani. After the completion of the experimental and analytical work described in this paper, Dr. Tarek Loubani was awarded a grant from the University of Western Ontario’s medical school in the Summer Research Training Program. This grant paid Alex Pavlosky a stipend to work with Dr. Tarek Loubani for two summers. Part of this time covered preparation of this manuscript and figures. Dr. Tarek Loubani was also awarded a fellowship with the Shuttleworth Foundation in March 2017. During the latter stages of the preparation of the manuscript (after March 2017), Dr. Tarek Loubani received protected research time funded by the Foundation. This was during the revision phase of the publication process. While Dr. Tarek Loubani and Mahmoud Al-Alawi are affiliated with Glia Inc., this research corporation is solely owned and controlled by Dr. Tarek Loubani, did not exist during the study design, data collection and analysis or decision to publish. It had no role in funding or decisionmaking for any members of the project for the duration of the above. While Glia Inc. existed during the preparation of the manuscript, the corporation had no role in manuscript preparation. Since March 2017, Glia Inc. has paid a salary to Mahmoud Al-Alawi for his work researching and manufacturing medical devices. The funding for Glia Inc. is presently provided by Dr. Tarek Loubani and by the Shuttleworth Foundation.
+
+
+
+
+2. Please confirm that all information in your Funding Information is also present in your Financial Disclosure. Only the Financial Disclosure section will be published alongside your article to describe your funding.
+
+Funding Information:
+Shuttleworth Foundation (SA), Dr. Tarek Loubani
+Western University, Dr. Tarek Loubani
+
+
+3. PLOS requires an ORCID iD for the corresponding author in Editorial Manager on papers submitted after December 6th, 2016. Please ensure that you have an ORCID iD and that it is validated in Editorial Manager. To do this, go to ‘Update my Information’ (in the upper left-hand corner of the main menu), and click on the Fetch/Validate link next to the ORCID field. This will take you to the ORCID site and allow you to create a new iD or authenticate a pre-existing iD in Editorial Manager. Please see the following video for instructions on linking an ORCID iD to your Editorial Manager account: https://www.youtube.com/watch?v=_xcclfuvtxQ
+
+
+
+4. Your Data Availability Statement currently reads, "All data are available from https://github.com/GliaX under the stethoscope repository."
+
+Please confirm whether of the minimal dataset required to replicate the findings in your study are contained within your paper and GitHub. By minimal underlying data, we are referring to any raw values or images behind graphs, statistical averages, or figures used to reach the conclusions in your manuscript.
+
+
+
+5. Affiliation information is missing from the byline of your manuscript. Please ensure that each author affiliation contains at least an institution, city, and country.
+
+
+
+6. PLOS requires that you differentiate heading levels by font size only. Please modify your submission so that different heading levels are clearly indicated by different font sizes. See our formatting guidelines for further information: http://journals.plos.org/plosone/s/file?id=wjVg/PLOSOne_formatting_sample_main_body.pdf
+
+
+
+7. Please modify the headings in your manuscript so that they are not written in all capital letters or all italics. Acronyms, gene or species names, etc. can be in capitals or italics. See our formatting guidelines for further information: http://journals.plos.org/plosone/s/file?id=wjVg/PLOSOne_formatting_sample_main_body.pdf
+
+
+
+8. Please reformat your reference citations so that they are in square brackets (e.g., [1]). If you are using EndNote, please ensure that you use the most recent version of the PLOS output style, which can be found at http://endnote.com/downloads/style/plos-public-library-science-all-journals
+
+
+
+9. Thank you for including your tables in read-through order within your manuscript text. Could you please create line breaks/spaces (press the "enter" key 2-3 times) between your table footnotes and the manuscript text so that our typesetter can correctly see which text should be your table footnotes and which text should be your main text?
+
+
+
+10. Currently, some of your in-text figure citations and your figure captions do not meet PLOS formatting guidelines. Please ensure that all citations of figures are in the format "Fig #" or "Figs # and #" (e.g., “Fig 3” or "Figs 1 and 2"). Figure guidelines can be found at http://journals.plos.org/plosone/s/figures
