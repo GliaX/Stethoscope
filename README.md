@@ -61,9 +61,9 @@ Assembly Instructions
 * Insert silicone into mold and allow to set as per manufacturer instructions.
 * Attach the diaphragm (40mm) to the stethoscope head.
 * Attach the stethoscope head to the silicone tube.
-* Attach the silicone tube to the T-Piece.
+* Attach the silicone tube to the Y-Piece.
 * Attach spring to ear tubes.
-* Attach the T-piece to the ear tubes.
+* Attach the Y-piece to the ear tubes.
 * Attach the ear tubes to the molded earplugs.
 * Test the stethoscope as per the validation instructions.
 
