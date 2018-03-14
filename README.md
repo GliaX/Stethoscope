@@ -3,7 +3,9 @@ Stethoscope
 
 This project aims to create a research-validated stethoscope whose plans are 
 available freely and openly. The goal is for the bell to cost ~USD$1-2 to produce, 
-and the rest of the stethoscope to cost approximately the same.
+and the rest of the stethoscope to cost approximately the same. You can see the peer-reviewed publication relating to this stethoscope's validation here:
+
+http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193087
 
 Currently, the stethoscope resulting from this project functions as well as the 
 market gold standard, the Littmann Cardiology III.
@@ -82,7 +84,7 @@ Changing and creating SCAD files
 ================================
 
 [CrystalSCAD](https://github.com/Joaz/CrystalScad) and [OpenSCAD](http://www.openscad.org/) 
-were used to create all STL files. To recreate the stethoscope head, simpley do:
+were used to create all STL files. To recreate the stethoscope head, simply do:
 
 ``` shell
 gem install crystalscad
