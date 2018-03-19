@@ -100,3 +100,7 @@ Other stethoscopes
 Others have made 3D printed stethoscopes too. See:
 * https://www.youmagine.com/designs/stethoscope-chestpiece
 
+Licensing notes
+===============
+As per our understanding, hardware is not covered by copyright. However, we present
+our work under the TAPR OHL license insofar as it applies.
