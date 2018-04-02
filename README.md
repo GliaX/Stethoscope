@@ -94,6 +94,17 @@ The SCAD files output from CrystalSCAD are found in `source_files/stethoscope_he
 * PrintableStethoscopeHead1Assembly_output.scad - The head
 * EarplugMold_output.scad - Earplug mold
 
+Mass Manufacturing
+==================
+We generally print 3 stethoscopes per plate to ensure that each stethoscope is created out of the same material.
+
+Our serial numbering system consists of two parts. The last number part is the total number of unique stethoscopes
+created since day 1. All numbers before that dash are spool identifiers involved in that stethoscope. For example,
+
+001-010 would be the tenth stethoscope made with the first spool in our repository. If the first spool makes a total
+of 15 stethoscopes, then the first stethoscope of the second spool would be 002-016. If the twentieth stethoscope uses 
+plastic from spool 002 and spool 003, it would be 002-003-020.
+
 
 Other stethoscopes
 ==================
