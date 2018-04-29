@@ -1,11 +1,14 @@
-ro=20;
+
+spring_radius = 20; // Radius of spring
+eartube_rotation = 5; // Rotation of eartube in spring
+
 
 // Create the first leaf (outside) of the spring
 
 module outerSpring() {
     difference(){
-        cylinder(r=ro+1,h=10,$fn=60); //outer diameter
-        cylinder(r=ro-2,h=10,$fn=60); //inner diameter
+        cylinder(r=spring_radius+1,h=10,$fn=60); //outer diameter
+        cylinder(r=spring_radius-2,h=10,$fn=60); //inner diameter
     }
 }
 
@@ -13,8 +16,8 @@ module outerSpring() {
 module innerSpring() {
     translate([0,8,0]) 
     difference(){
-        cylinder(r=ro+2,h=10,$fn=60); //outer diameter
-        cylinder(r=ro,h=10,$fn=60); //inner diameter
+        cylinder(r=spring_radius+2,h=10,$fn=60); //outer diameter
+        cylinder(r=spring_radius,h=10,$fn=60); //inner diameter
     }
 }
 
@@ -53,15 +56,15 @@ module hole($rotate){
         union(){
         // Cuts
         translate([-45,0,0])cube([90,45,10]); //cut centre
-        translate([ro+1,-ro,0])cube([90,45,10]); //cut left
-        translate([-ro-90-1,-ro,0])cube([90,45,10]); //cut right
+        translate([spring_radius+1,-spring_radius,0])cube([90,45,10]); //cut left
+        translate([-spring_radius-90-1,-spring_radius,0])cube([90,45,10]); //cut right
     }
 }
 
     // Connectors
-    translate([ro+5,30,7]) rotate([90,0,0]) hole(15);
-    translate([-ro-5,30,7]) mirror([1,0,0]) rotate([90,0,0]) hole(15);
+    translate([spring_radius+10.5,30,7]) rotate([90,0,-10]) hole(eartube_rotation);
+    translate([-spring_radius-10.5,30,7]) mirror([1,0,0]) rotate([90,0,-10]) hole(eartube_rotation);
     
     //Connect connectors to springs
-    translate([ro-2,0,0])cube([3,20,10]);
-translate([-ro-1,0,0])cube([3,20,10]);
+    translate([spring_radius-2,-0.5,0])rotate([0,0,-10]) cube([3,20,10]);
+    translate([-spring_radius-1,-0.5,0])rotate([0,0,10]) cube([3,20,10]);
