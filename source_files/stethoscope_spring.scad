@@ -62,9 +62,9 @@ module hole($rotate){
 }
 
     // Connectors
-    translate([spring_radius+5,30,7]) rotate([90,0,0]) hole(eartube_rotation);
-    translate([-spring_radius-5,30,7]) mirror([1,0,0]) rotate([90,0,0]) hole(eartube_rotation);
+    translate([spring_radius+10.5,30,7]) rotate([90,0,-10]) hole(eartube_rotation);
+    translate([-spring_radius-10.5,30,7]) mirror([1,0,0]) rotate([90,0,-10]) hole(eartube_rotation);
     
     //Connect connectors to springs
-    translate([spring_radius-2,0,0])cube([3,20,10]);
-translate([-spring_radius-1,0,0])cube([3,20,10]);
+    translate([spring_radius-2,-0.5,0])rotate([0,0,-10]) cube([3,20,10]);
+    translate([-spring_radius-1,-0.5,0])rotate([0,0,10]) cube([3,20,10]);
