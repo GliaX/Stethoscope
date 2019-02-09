@@ -128,4 +128,4 @@ difference(){
          }
          
          // Add stop so that people don't push the eartube too far
-         translate([35.5,-1,3]) cube([2,2,1]);
+         translate([35.5,-1,3]) cube([2,2,2]);
