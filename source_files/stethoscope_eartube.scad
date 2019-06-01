@@ -43,6 +43,8 @@ difference(){
                 
                 // Build the eartube base, which will be a stretched/elliptical cylinder to fit as a key in the ear tube spring. This will reduce the need for directional calibration in the assembly process.
                 hull(){
+                    //To create a taper, decrease the sphere size and reduce Z by the same amount so it remains on the plate. For example, to taper by 1mm, do:
+                    // translate([xarray[1],yarray[1],-1])scale([1,1.2,1])sphere(2.5,$fn=10);
                     translate([xarray[1],yarray[1],0])scale([1,1.2,1])sphere(3.5,$fn=10);
                     translate([xarray[2],yarray[2],0])scale([1,1.2,1])sphere(3.5,$fn=10);
                 }
@@ -76,8 +78,23 @@ difference(){
     
     union(){
         // Build the hole of the tube from the [0,0] until the earbud area
-        for(i=[0:1:27]){
-            hull(){
+
+        // If tapered, point down the hollow part for the tapered part of the eartube like so:
+        /*
+        hull(){
+            translate([xarray[0],yarray[0],-1])
+                 sphere(2,$fn=10);
+            translate([xarray[1],yarray[1],-1])
+                 sphere(2,$fn=10);
+            translate([xarray[2],yarray[2],0])
+                 sphere(2,$fn=10);
+        }
+        */
+        
+        //If there is a taper, then start at part 2 of the array. Otherwise, start at 0
+
+            for(i=[0:1:27]){
+                hull(){
                 translate([xarray[i],yarray[i],0])
                  sphere(2,$fn=10);
                 translate([xarray[i+1],yarray[i+1],0])
@@ -109,3 +126,6 @@ difference(){
              }
              translate([-5,-mouse_ear_connector_width/2,0]) cube([5,mouse_ear_connector_width,.2]);
          }
+         
+         // Add stop so that people don't push the eartube too far
+         translate([35.5,-1,3]) cube([2,2,2]);
