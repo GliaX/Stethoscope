@@ -21,51 +21,66 @@ Bill of Materials
 * 1 Spring (spring.stl)
 
 **Other hardware:**
-Some vendors are suggested. See Bill of materials ODS file for more information.
-* 40cm - 50cm Silicone 12mm or 13mm OD, 8mm ID
-  * [8MM I.D X 12MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](http://www.advancedfluidsolutions.co.uk/8mm-id-x-12mm-od-clear-transulcent-silicone-hose-pipe-tubing-2480-p.asp) (USD$6.95/meter)
+Some vendors are suggested.
+* 40cm - 50cm Silicone 13mm (preferred) or 12mm OD, 8mm ID, 50 durometer
   * [8MM I.D X 13MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](https://www.advancedfluidsolutions.co.uk/8mm-id-x-13mm-od-clear-transulcent-silicone-hose-pipe-tubing-2482-p.asp) (USD$7.34/meter)
 
-* 20cm Silicone 6mm or 8mm OD, 4mm ID (cut into 10cm pieces)
-  * [4mm ID x 6mm OD](https://www.advancedfluidsolutions.co.uk/4mm-id-x-6mm-od-clear-transulcent-silicone-hose-pipe-tubing-2450-p.asp)
+* 20cm Silicone 8mm (preferred) or 6mm OD, 4mm ID (cut into 10cm pieces), 60 durometer
   * [4mm ID x 8mm OD](https://www.advancedfluidsolutions.co.uk/4mm-id-x-8mm-od-clear-transulcent-silicone-hose-pipe-tubing-2454-p.asp)
 
 * Diaphragm: 40mm diameter cut from a report cover with approx 0.35mm plastic sheet
   * [Staples 21639 report cover (UPC 718103160223)](http://www.staples.ca/en/Staples-Swing-Lock-Report-Cover-Clear-with-Black-Spine-5-Pack/product_780953_2-CA_1_20001) (USD$8.84)
   * You can cut the diaphragm by hand or with a stamp like [this one](https://www.amazon.ca/Karujimu-ki-jumbo-craft-circle-CN45004/dp/B001CBY41W)
 
-* Earbuds: Any large-sized standard earbuds will do.
+* Earbuds / Eartips: Any large-sized standard earbuds will do.
   * [Silicone Earbuds 7 Pairs - Large size](https://www.amazon.ca/gp/product/B006VELFJY)
  
 **Optional hardware**:
 * Metal spring for holding ear tubes together
 
 
-
 Print Instructions
 ==================
-**INFILL MUST BE 100%**
+**INFILL MUST BE 100%** **INFILL MUST BE 100%** **INFILL MUST BE 100%** **INFILL MUST BE 100%**
 
-All printed parts should be printed with ABS or PLA plastic at 0.2mm layer height, 
-though it is acceptable for the first layer to be 0.3mm.
+* Use PETG or ABS
+* Layer height: 0.2mm
+* Use PrusaSlicer 2.0 or above to import 3MF file
+* Modify filament and printer settings as needed.
+* **DO NOT MODIFY PRINT SETTINGS**
+* Export and print
 
-We print the eartubes and Y-pieces with a brim of 2mm to ensure that none of the 
-parts lift off.
 
-**INFILL MUST BE 100%.** Otherwise, the stethoscope will not print well.
+Troubleshooting
+===============
+
+* If the spring and eartubes do not fit well, go ahead and scale the spring as needed
+* If the head and ring do not fit well, use caution as you may be modifying the acoustics. You can scale the head a little.
+
+
+Notes
+=====
+
+* We do not use PLA due to deformation in heat and poor plastic quality in the spring causing early failure. PLA may be used, but the lifetime of the stethoscope will decrease significantly.
+
+* We do not use brims, but you may print the eartubes and Y-pieces with a brim of 2mm to ensure that none of the parts lift off.
+
+**INFILL MUST BE 100%** **INFILL MUST BE 100%** **INFILL MUST BE 100%.** Otherwise, the stethoscope will not produce a correct sound.
 
 
 Assembly Instructions
 =====================
 
-* Insert silicone into mold and allow to set as per manufacturer instructions.
+See [this instructional video](https://www.youtube.com/watch?v=u-KNTc0POLA) for assembly instructions.
+
 * Attach the diaphragm (40mm) to the stethoscope head.
 * Attach the stethoscope head to the silicone tube.
 * Attach the silicone tube to the Y-Piece.
 * Attach spring to ear tubes.
 * Attach the Y-piece to the ear tubes.
-* Attach the ear tubes to the molded earplugs.
+* Attach the ear tubes to the eartips / earbuds.
 * Test the stethoscope as per the validation instructions.
+
 
 Printing the inserts
 ====================
@@ -90,26 +105,25 @@ were used to create all STL files. To recreate the stethoscope head, simply do:
 gem install crystalscad
 ruby source_files/stethoscope_head/stethoscope_head.rb
 ```
+
 The SCAD files output from CrystalSCAD are found in `source_files/stethoscope_head/output` and are named as follows:
 * PrintableStethoscopeHead1Assembly_output.scad - The head
-* EarplugMold_output.scad - Earplug mold
+
 
 Mass Manufacturing
 ==================
-We generally print 3 stethoscopes per plate to ensure that each stethoscope is created out of the same material.
+We generally print 4 stethoscopes per plate to ensure that each stethoscope is created out of the same material.
 
-Our serial numbering system consists of two parts. The last number part is the total number of unique stethoscopes
-created since day 1. All numbers before that dash are spool identifiers involved in that stethoscope. For example,
+Our serial numbering system consists of two parts. The last number part is the total number of unique stethoscopes created since day 1. All numbers before that dash are spool identifiers involved in that stethoscope. For example:
 
-001-010 would be the tenth stethoscope made with the first spool in our repository. If the first spool makes a total
-of 15 stethoscopes, then the first stethoscope of the second spool would be 002-016. If the twentieth stethoscope uses 
-plastic from spool 002 and spool 003, it would be 002-003-020.
+001-010 would be the tenth stethoscope made with the first spool in our inventory. If the first spool makes a total of 15 stethoscopes, then the first stethoscope of the second spool would be 002-016. If the twentieth stethoscope uses plastic from spool 002 and spool 003, it would be 002-003-020.
 
 
 Other stethoscopes
 ==================
 Others have made 3D printed stethoscopes too. See:
 * https://www.youmagine.com/designs/stethoscope-chestpiece
+
 
 Licensing notes
 ===============
