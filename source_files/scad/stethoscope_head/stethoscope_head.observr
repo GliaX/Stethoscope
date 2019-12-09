@@ -1,0 +1,13 @@
+
+system("./stethoscope_head.rb")
+watch( 'stethoscope_head.rb' )  {|md|
+   system("./stethoscope_head.rb")
+}
+
+watch( 'lib/(.*).rb' )  {|md|
+   system("./stethoscope_head.rb")
+}
+
+watch( 'lib/*/(.*).rb' )  {|md|
+   system("./stethoscope_head.rb")
+}
