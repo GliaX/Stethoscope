@@ -206,8 +206,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="205.44562"
-     inkscape:cy="218.71528"
+     inkscape:cx="434.54822"
+     inkscape:cy="204.57314"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -889,5 +889,16 @@
        height="40.21563"
        width="39.776829"
        style="stroke-width:13.67378902" />
+    <text
+       id="text179"
+       y="940.13287"
+       x="455.43607"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         y="940.13287"
+         x="455.43607"
+         id="tspan177"
+         sodipodi:role="line">Model no.: 001</tspan></text>
   </g>
 </svg>
