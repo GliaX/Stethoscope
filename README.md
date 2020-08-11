@@ -19,6 +19,7 @@ Bill of Materials
 * 2 ear tubes (eartube.stl)
 * 1 Y-piece (y_piece.stl)
 * 1 Spring (spring.stl)
+* 1 Ring (ring.stl)
 
 **Other hardware:**
 Some vendors are suggested.
