@@ -80,7 +80,7 @@ See [this instructional video](https://www.youtube.com/watch?v=u-KNTc0POLA) for 
 * Attach spring to ear tubes.
 * Attach the Y-piece to the ear tubes.
 * Attach the ear tubes to the eartips / earbuds.
-* Test the stethoscope as per the validation instructions.
+* Test the stethoscope as per the [validation instructions](https://github.com/GliaX/Stethoscope/blob/master/testing/Stethoscope_Validation.md).
 
 
 Printing the inserts
