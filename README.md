@@ -30,7 +30,7 @@ Some vendors are suggested.
   * [4mm ID x 8mm OD](https://www.advancedfluidsolutions.co.uk/4mm-id-x-8mm-od-clear-transulcent-silicone-hose-pipe-tubing-2454-p.asp)
 
 * Diaphragm: 40mm diameter cut from a report cover with approx 0.35mm plastic sheet
-  * [Staples 21639 report cover (UPC 718103160223)](https://www.staples.ca/products/780953-en-staples-swing-lock-report-cover-clear-with-black-spine-5pack) (USD$8.84)
+  * [In Business Report Covers](https://www.amazon.com/dp/B0CJCBC86X?_encoding=UTF8&psc=1&ref_=cm_sw_r_ud_dp_CY0Q8HRSQEBTA39H9VF2)(USD$8.99)
   * You can cut the diaphragm by hand or with a stamp like [this one](https://www.amazon.ca/Karujimu-ki-jumbo-craft-circle-CN45004/dp/B001CBY41W)
 
 * Earbuds / Eartips: Any large-sized standard earbuds will do.
