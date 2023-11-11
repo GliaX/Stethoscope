@@ -58,8 +58,8 @@ difference(){
                 }
             }
 
-        translate([xarray[30]-2,yarray[30]+6.5,0],0)
-            rotate([0,90,earbud_rotation])cylinder(r=6,h=9.5);//earbud
+        translate([xarray[30]-2,yarray[30]+6.5,0])
+            rotate([0,90,earbud_rotation])cylinder(r=6,h=9.5);//earbud -- fixed a typo on translate arguments
         }
         
         // Add earbud connector piece

@@ -22,7 +22,12 @@ Bill of Materials
 * 1 Ring (ring.stl)
 
 **Other hardware:**
+
 Some vendors are suggested.
+In Canada...
+https://www.capsnplugs.com/product-line/masking-products/silicone-tubing/silicone-tubing/
+I ordered SLT-312 and SLT-156 for the 8mm and 4mm respectively. The SLT-156 was a bit small but fit when I printed the eartubes at 90%.
+
 * 40cm - 50cm Silicone 13mm (preferred) or 12mm OD, 8mm ID, 50 durometer
   * [8MM I.D X 13MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](https://www.advancedfluidsolutions.co.uk/8mm-id-x-13mm-od-clear-transulcent-silicone-hose-pipe-tubing-2482-p.asp) (USD$7.34/meter)
 
