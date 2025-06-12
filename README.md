@@ -111,6 +111,18 @@ The SCAD files output from CrystalSCAD are found in `source_files/stethoscope_he
 * PrintableStethoscopeHead1Assembly_output.scad - The head
 
 
+As an alternative to installing via ``gem`` you can run CrystalSCAD using a [Singularity](https://www.sylabs.io/)
+container image. Build the image and run it using:
+
+```
+cd source_files/stethoscope_head
+singularity build crystalscad.img docker://rubygem/crystalscad:latest
+mkdir output
+singularity exec crystalscad.simg ruby stethoscope_head.rb
+```
+
+As above, output SCAD files are in the `output/` directory.
+
 Mass Manufacturing
 ==================
 We generally print 4 stethoscopes per plate to ensure that each stethoscope is created out of the same material.
