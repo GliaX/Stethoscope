@@ -23,22 +23,21 @@ Bill of Materials
 
 **Other hardware:**
 Some vendors are suggested.
-* 40cm - 50cm Silicone 13mm (preferred) or 12mm OD, 8mm ID, 50 durometer
-  * [8MM I.D X 13MM O.D NGP60 Clear Translucent Silicone Hose Pipe Tubing](https://www.advancedfluidsolutions.co.uk/8mm-id-x-13mm-od-clear-transulcent-silicone-hose-pipe-tubing-2482-p.asp) (USD$7.34/meter)
 
-* 20cm Silicone 8mm (preferred) or 6mm OD, 4mm ID (cut into 10cm pieces), 60 durometer
-  * [4mm ID x 8mm OD](https://www.advancedfluidsolutions.co.uk/4mm-id-x-8mm-od-clear-transulcent-silicone-hose-pipe-tubing-2454-p.asp)
+*Translucent Silicone Rubber Tubing in US*
+* 50cm length of Silicone tube - 8mm ID, 13mm OD, 50 durometer
+  * [8MM ID X 13MM OD (0.315" ID x 0.512" OD)](https://aerorubber.com/standard-tube-extrusions/)
 
-* Diaphragm: 40mm diameter cut from a report cover with approx 0.35mm plastic sheet
+* 20cm length of silicone tube (cut into 10cm pieces) - 4mm ID, 8mm OD, 50 durometer
+  * [4mm ID x 8mm OD (0.157" ID x 0.314" OD)](https://aerorubber.com/standard-tube-extrusions/)
+ 
+*Diaphragm: 40mm diameter cut from a report cover with approx 0.35mm plastic sheet*
   * [In Business Report Covers](https://www.amazon.com/dp/B0CJCBC86X?_encoding=UTF8&psc=1&ref_=cm_sw_r_ud_dp_CY0Q8HRSQEBTA39H9VF2)(USD$8.99)
   * You can cut the diaphragm by hand or with a stamp like [this one](https://www.amazon.ca/Karujimu-ki-jumbo-craft-circle-CN45004/dp/B001CBY41W)
 
-* Earbuds / Eartips: Any large-sized standard earbuds will do.
+*Earbuds / Eartips: Any large-sized standard earbuds will do*
   * [Silicone Earbuds 7 Pairs - Large size](https://www.amazon.ca/gp/product/B006VELFJY)
  
-**Optional hardware**:
-* Metal spring for holding ear tubes together
-
 
 Print Instructions
 ==================
@@ -66,7 +65,7 @@ Notes
 
 * We do not use brims, but you may print the eartubes and Y-pieces with a brim of 2mm to ensure that none of the parts lift off.
 
-**INFILL MUST BE 100%** **INFILL MUST BE 100%** **INFILL MUST BE 100%.** Otherwise, the stethoscope will not produce a correct sound.
+**INFILL MUST BE 100% Otherwise, the stethoscope will not produce a correct sound!**
 
 
 Assembly Instructions
