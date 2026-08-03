@@ -1,26 +1,16 @@
-$outside_width = 41.5/2; //Radius of outside wall top (mm)
-$outside_width_bottom = 45/2; //Radius of outside wall top (mm)
-$inside_width_diaphragm = 18; // Inside radius of diaphragm (mm)
-$inside_width_wall = 20; //Inside radius of wall (mm)
+$fs = 0.5;
+$fa = 1;
+//$fn = 12;
 
-// Bottom ring
-module bottom_ring($fn=360) {
-    difference() {
-        cylinder(h = 0.5, r = $outside_width);
-        cylinder(h = 0.5, r = $inside_width_diaphragm);
-    }
-}
+ring();
 
-// Side wall
-module side_wall($fn=360) {
-    difference() {
-        cylinder(h = 6, r2 = $outside_width, r1= $outside_width_bottom);
-        cylinder(h = 6, r = $inside_width_wall);
-    }
-}
-
-//Compile both rings
-union() {
-    bottom_ring();
-    side_wall();
+module ring() {
+	difference() {
+		rotate_extrude() hull() {
+			translate([20.5, 1.5]) circle(d = 3);
+			square([21, 6]);
+		}
+		translate([0,0,-1]) cylinder(r=17.5,h=10); // inner hole
+		translate([0,0,0.5]) cylinder(r=19.5,h=10); // head flange
+	}
 }
